@@ -1,1 +1,1160 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, shrink-to-fit=no, height=device-height, minimum-scale=1.0, user-scalable=0">
+  <title>Ready To Work | Scala Group | スカラグループ</title>
+  <link rel="shortcut icon" href="./favicon.ico" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/styles.css" type="text/css" />
+</head>
+
+<body>
+  <!-- Nav bar start -->
+  <nav id="header" class="navbar shadow-sm">
+    <div class="container-xl">
+      <div class="navbar__logo">
+        <img class="logo" src="./img/logo.svg" />
+      </div>
+      <div id="ham" class="navbar__ham" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="navbar__item">
+        <div><a href="#our-partner">私たちのグループ</a></div>
+        <div><a href="#our-missions">私たちの使命</a></div>
+        <div><a href="#our-strength">私たちの強み</a></div>
+        <div><a href="#board-members">経営メンバー</a></div>
+        <div><a href="#inquiry">お問い合わせ</a></div>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav bar end -->
+
+  <!-- Mobile Nav bar start -->
+  <nav id="mbl-header" class="navbar shadow-sm">
+    <div class="navbar__item">
+      <div>
+        <a href="#our-partner" onclick="myFunction(this)">私たちのグループ</a>
+      </div>
+      <div>
+        <a href="#our-missions" onclick="myFunction(this)">私たちの使命</a>
+      </div>
+      <div>
+        <a href="#our-strength" onclick="myFunction(this)">私たちの強み</a>
+      </div>
+      <div>
+        <a href="#board-members" onclick="myFunction(this)">経営メンバー</a>
+      </div>
+      <div>
+        <a href="#inquiry" onclick="myFunction(this)">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav bar end -->
+
+  <!-- Cover section start -->
+  <section class="coverSection">
+    <div class="main-container">
+      <div class="content container">
+        <p class="coverHeading1">東証一部グループだから実現できる「開発</p>
+        <p class="coverHeading2">スピード」と「品質担保」</p>
+        <p class="coverSubHeading">
+          初めての発注でも安心のサポート体制 トラブルのない<br />
+          安定したシステム構築最新の開発手法による効率的な<br />
+          開発
+        </p>
+        <div class="coverButton--wrapper">
+          <button class="coverButton">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.1659 2.64355H3.86956C3.77793 2.64351 3.68718 2.66153 3.60252 2.69658C3.51786 2.73162 3.44093 2.78301 3.37613 2.8478C3.31134 2.9126 3.25995 2.98952 3.2249 3.07419C3.18985 3.15885 3.17184 3.24959 3.17188 3.34122V3.34385C3.22386 3.3831 3.27294 3.42605 3.31875 3.47236C3.37008 3.52285 3.41743 3.57722 3.46039 3.63499L3.49187 3.6822L4.37621 5.05833L4.56722 5.19033L11.1033 10.0059C11.2228 10.0944 11.3677 10.1422 11.5164 10.1422C11.6652 10.1422 11.81 10.0944 11.9295 10.0059L18.4682 5.19296V12.8438H12.0082L13.8573 14.0345C13.9397 14.0943 14.0154 14.1629 14.0829 14.2391H19.1659C19.2576 14.2391 19.3483 14.2211 19.433 14.1861C19.5176 14.151 19.5946 14.0996 19.6593 14.0349C19.7241 13.9701 19.7755 13.8931 19.8106 13.8085C19.8456 13.7238 19.8636 13.6331 19.8636 13.5414V3.34122C19.8636 3.24959 19.8456 3.15885 19.8106 3.07419C19.7755 2.98952 19.7241 2.9126 19.6593 2.8478C19.5945 2.78301 19.5176 2.73162 19.433 2.69658C19.3483 2.66153 19.2576 2.64351 19.1659 2.64355ZM11.5151 8.5764L5.35407 4.0389H17.6814L11.5151 8.5764Z"
+                fill="white" />
+              <path
+                d="M13.315 14.7724L10.2656 12.8143C10.2068 12.7708 10.1397 12.7396 10.0685 12.7226C9.99736 12.7056 9.92347 12.7032 9.85133 12.7155C9.77919 12.7278 9.71028 12.7546 9.64875 12.7942C9.58722 12.8338 9.53433 12.8855 9.49327 12.9461C9.27177 13.2732 8.79264 13.9531 8.70525 14.077C8.54676 14.1431 7.29778 14.564 5.21211 12.4783C5.19335 12.4596 5.17668 12.4414 5.15978 12.4235L5.11467 12.3755L5.06845 12.3322C5.05057 12.3153 5.03241 12.2986 5.01367 12.2799C2.92665 10.1929 3.34915 8.94352 3.41485 8.78663C3.53853 8.69948 4.2188 8.22023 4.54593 7.99874C4.60611 7.95797 4.65749 7.90552 4.69701 7.84451C4.73653 7.7835 4.76338 7.71516 4.77598 7.64357C4.78858 7.57198 4.78667 7.49858 4.77035 7.42775C4.75404 7.35691 4.72366 7.29007 4.68101 7.2312L2.71963 4.17698C2.70521 4.15726 2.68927 4.1387 2.67196 4.12146C2.5827 4.03172 2.46207 3.98015 2.33552 3.97764C2.20898 3.97512 2.0864 4.02186 1.99364 4.10798C1.55301 4.51895 0.594003 5.4701 0.441539 5.78829C0.086791 6.54706 0.0377602 7.41328 0.304618 8.20723C0.978702 10.2426 2.11833 12.0927 3.6329 13.6104C3.65681 13.6343 3.68096 13.6565 3.70497 13.6785C3.74469 13.7148 3.78048 13.7506 3.81346 13.787C3.83563 13.8112 3.85771 13.8352 3.88161 13.8591C5.39927 15.3737 7.24936 16.5133 9.28477 17.1874C10.0787 17.4542 10.9449 17.4052 11.7037 17.0505C12.0219 16.898 12.973 15.939 13.384 15.4984C13.4309 15.4479 13.4665 15.3881 13.4886 15.3228C13.5107 15.2576 13.5188 15.1885 13.5122 15.1199C13.5057 15.0513 13.4848 14.9849 13.4508 14.925C13.4168 14.8651 13.3705 14.8131 13.315 14.7724L13.315 14.7724Z"
+                fill="white" />
+            </svg>
+            &nbsp;
+            <span class="d-block d-sm-block d-md-none d-lg-none d-xl-none showMobile">お問い合わせはこちら</span>
+            <span class="d-none d-md-block d-lg-block d-xl-block showDesktop"
+              onClick="document.getElementById('inquerySection').scrollIntoView();">お問い合わせはこちら</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Cover section End -->
+
+  <!-- Our partner section start -->
+  <section class="container-xl" id="our-partner">
+    <div class="partner-header">
+      <div class="partner-header__logo">
+        <img src="./img/partner-icon.png" alt="" />
+      </div>
+      <div class="partner-header__body">
+        <h1>私たちのグループ</h1>
+      </div>
+    </div>
+
+    <!-- First player card list start -->
+    <div class="partner-card-section">
+      <div class="row gy-3">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-lg-4 d-flex companyAttribueWrapper">
+          <div class="companyAttribue">
+            <div class="companyAttribue--icon">
+              <img src="./img/revenue.png" alt="" />
+            </div>
+            <div class="companyAttribue--contentWrapper">
+              <div class="companyAttribue--contentWrapper__title">
+                グループ売上高
+              </div>
+              <div class="companyAttribue--contentWrapper__figure">
+                <span class="qty"> 100 </span>
+                <span class="description">億円</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-lg-4 d-flex companyAttribueWrapper">
+          <div class="companyAttribue">
+            <div class="companyAttribue--icon">
+              <img src="./img/group.png" alt="" />
+            </div>
+            <div class="companyAttribue--contentWrapper">
+              <div class="companyAttribue--contentWrapper__title">
+                グループ従業員数
+              </div>
+              <div class="companyAttribue--contentWrapper__figure">
+                <span class="qty">500+</span>
+                <span class="description">名以上</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-lg-4 d-flex companyAttribueWrapper">
+          <div class="companyAttribue">
+            <div class="companyAttribue--icon">
+              <img src="./img/company.png" alt="" />
+            </div>
+            <div class="companyAttribue--contentWrapper">
+              <div class="companyAttribue--contentWrapper__title">
+                連結対象会社数
+              </div>
+              <div class="companyAttribue--contentWrapper__figure">
+                <span class="qty">18</span>
+                <span class="description">社</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner Logo section -->
+    <div id="partner-logo-wrapper">
+      <!-- Background animation -->
+      <div class="background">
+        <div class="circle-bg">
+          <div id="left-circle">
+            <img src="./img/anim-assets/big-c.svg" alt="" />
+          </div>
+          <div id="main-circle" class="main-circle">
+            <img src="./img/anim-assets/main-circle.svg" alt="" class="src" />
+            <div class="circle-outline">
+              <img src="./img/anim-assets//border-c.svg" alt="" class="src" />
+            </div>
+          </div>
+          <div id="right-circle">
+            <img src="./img/anim-assets/big-c.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Background animation-end -->
+      <div id="partner-logo-section">
+        <div class="partner-logo-card">
+          <img src="./img/logos/scala-ace.png" class="img-1" />
+        </div>
+        <div class="partner-logo-card">
+          <img src="./img/logos/scala-com.png" class="img-2" />
+        </div>
+        <div class="center-section">
+          <div class="center-circle"></div>
+          <div class="partner-logo-card">
+            <img src="./img/logos/scala.png" class="img-3" />
+          </div>
+          <img src="./img/X.png" alt="" />
+          <div class="partner-logo-card">
+            <img src="./img/logos/ready-to-work.png" class="img-4" />
+          </div>
+        </div>
+        <div class="partner-logo-card">
+          <img src="./img/logos/scala-next.png" class="img-5" />
+        </div>
+        <div class="partner-logo-card">
+          <img src="./img/logos/scala-partners.png" class="img-6" />
+        </div>
+        <div class="partner-logo-card">
+          <img src="./img/logos/scala-playce.png" class="img-7" />
+        </div>
+        <div class="partner-logo-card">
+          <img src="./img/logos/scala-service.png" class="img-8" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our partner section end -->
+
+  <div class="container-xl">
+    <hr />
+  </div>
+
+  <!-- Our mission section start -->
+  <section class="ourmissionSection" id="our-missions">
+    <div class="container-xl">
+      <div class="ourmissionSection--heading__content d-flex justify-content-center">
+        <div class="sectionHeadingImg d-flex align-items-center">
+          <img src="./img/idea.svg" alt="image" />
+        </div>
+        <div class="headingTextWrapper">
+          <div class="headingText--sectionHeadeing">私たちの使命</div>
+        </div>
+      </div>
+      <div class="ourmissionSection--body__content">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ourmissionSection--body__content--imageWrapper">
+            <object data="./img/dots_top.svg" width="81" height="74" class="dotsTop"></object>
+            <img src="./img/city.png" class="img-fluid mainImage" alt="" />
+            <object data="./img/dots_bottom.svg" width="81" height="74" class="dotsBottom"></object>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ourmissionSection--body__content--contentWrapper">
+            <div>
+              <div class="ourmissionSection--body__content--contentWrapper__contentHeading">
+                Our Business
+              </div>
+              <div class="ourmissionSection--body__content--contentWrapper__contentBody">
+                <p>
+                  事業家集団として、事業開発のリーディングカンパニーになる
+                </p>
+
+                <p>私たちは『共創を推進する』企業であり、</p>
+
+                <p>
+                  大手企業様からスタートアップ、自治体など幅広い顧客に対してシステム開発をご支援しています。
+                </p>
+
+                <p>私たちはクライアント目線に立ち事業開発をしていきます</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our mission section end -->
+
+  <nav id="my-buttons" class="shadow-sm">
+    <button type="button" class="btn btn-secondary first"
+      onClick="document.getElementById('ourStrength').scrollIntoView();">
+      私たちの強み
+    </button>
+    <button type="button" class="btn btn-secondary second"
+      onClick="document.getElementById('developmentStyle').scrollIntoView();">
+      開発スタイル
+    </button>
+    <button type="button" class="btn btn-secondary third"
+      onClick="document.getElementById('development-flow').scrollIntoView();">
+      開発の流れ
+    </button>
+    <button type="button" class="btn btn-secondary fourth"
+      onClick="document.getElementById('developmentTeam').scrollIntoView();">
+      開発の特徴
+    </button>
+    <button type="button" class="btn btn-secondary"
+      onClick="document.getElementById('development-result').scrollIntoView();">
+      開発実績
+    </button>
+  </nav>
+
+  <section class="missionImageSection">
+    <div class="threeCircles-bg">
+      <div class="threeCircles--wrapper d-flex">
+        <div class="circle--wrapper">
+          <div class="circle">
+            <div class="circle--heading">クライアントファースト</div>
+            <svg class="svg" width="300" height="3" viewBox="0 0 300 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 3L114.068 3L300 3L0 0L0 3Z" fill="#F8BC17" />
+            </svg>
+            <div class="circle--content">
+              クライアント様の成果を最優先に考え、スピード×品質を大事にします。
+              顕在的課題だけでなく潜在的課題にもアプローチし、期待を超えるパートナーを目指します。
+            </div>
+          </div>
+        </div>
+        <div class="circle--wrapper">
+          <div class="circle">
+            <div class="circle--heading">プロフェッショナル</div>
+            <svg class="svg" width="300" height="3" viewBox="0 0 300 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 3L114.068 3L300 3L0 0L0 3Z" fill="#F8BC17" />
+            </svg>
+            <div class="circle--content">
+              成果を出すためにサービス提供者として自覚とプライドを持ち、挑戦を続けます。
+              結果を求めて事業を推進していきます。
+            </div>
+          </div>
+        </div>
+        <div class="circle--wrapper">
+          <div class="circle">
+            <div class="circle--heading">アントレプレナーシップ</div>
+            <svg class="svg" width="300" height="3" viewBox="0 0 300 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 3L114.068 3L300 3L0 0L0 3Z" fill="#F8BC17" />
+            </svg>
+            <div class="circle--content">
+              「自主性×当事者意識」を持ち主体的に事業を推進していきます。
+              指示を待ち”作業”するのではなく、自ら主体的に動いていく”アントレプレナーシップ”を持ちます。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strength Section Start -->
+  <section class="strength-section" id="our-strength">
+    <div class="containers">
+      <div class="title-button">
+        <div class="title-img">
+          <div class="image">
+            <img src="./img/bulbs.svg" />
+          </div>
+          <div class="title">
+            <h1>私たちの強み</h1>
+          </div>
+        </div>
+        <div id="our-tag" class="my-buttons container-xl">
+          <button type="button" class="btn btn-secondary first"
+            onClick="document.getElementById('ourStrength').scrollIntoView();">
+            私たちの強み
+          </button>
+          <button type="button" class="btn btn-secondary second"
+            onClick="document.getElementById('developmentStyle').scrollIntoView();document.getElementById('developmentStyle')">
+            開発スタイル
+          </button>
+          <button type="button" class="btn btn-secondary third"
+            onClick="document.getElementById('development-flow').scrollIntoView();">
+            開発の流れ
+          </button>
+          <button type="button" class="btn btn-secondary fourth"
+            onClick="document.getElementById('developmentTeam').scrollIntoView();">
+            開発の特徴
+          </button>
+          <button type="button" class="btn btn-secondary"
+            onClick="document.getElementById('development-result').scrollIntoView();">
+            開発実績
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="chevronContainer" id="ourStrength">
+      <div class="contentDiv">
+        <div class="chevronContainer--contentWrapper">
+          <div class="chevronContainer--contentWrapper__header">
+            <div class="sectionTitleBg">私たちの強み</div>
+          </div>
+          <div class="chevronContainer--contentWrapper__image">
+            <img src="./img/team.png" class="img-responsive" alt="" />
+          </div>
+          <div class="chevronContainer--contentWrapper__content">
+            <div class="chevronContainer--contentWrapper__content--heading">
+              クライアント様の“作りたい”に寄り添う
+            </div>
+            <div class="chevronContainer--contentWrapper__content--paragraph">
+              <p class="ptag">
+                東証プライム上場企業スカラ・グループの一員であり、
+                グループ内のリソースも活用しながら、常にお客様に最適なシステムの開発に努めています。
+              </p>
+              <p class="ptag">
+                自社でWebサービスを開発・運営してきた経緯もあり、
+                そこで培われた知見を活かし、事業成長を見据えた提案と開発が可能です
+              </p>
+              <p class="ptag">
+                注文されたものを、ただ開発するのではなく、お客様と一緒になってアイデアを出し合い、システムのみならず、事業そのものも作り上げていくのが私たちのスタイルです。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img-section">
+        <div class="chevronContainer--clippedimageWrapper">
+          <img src="./img/team-lg.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Development Style Section Start-->
+  <section class="developmentStyleSection" id="developmentStyle">
+    <div class="container developmentStyleSection--wrapper">
+      <div class="developmentStyleSection--sectionTitle">開発スタイル</div>
+    </div>
+    <div class="container developmentStyleSection--fullWidth">
+      <div class="developmentStyleSection--fullWidth__title">
+        ハイブリッド型開発
+      </div>
+    </div>
+    <div class="container">
+      <div class="developmentStyleSteps--Wrapper">
+        <div class="developmentSteps">
+          <div class="developmentStyleStepIcon toRight">
+            <img src="./img/edit.svg" alt="" />
+          </div>
+          <div class="developmentStyleStepText">要件定義</div>
+        </div>
+
+        <div class="dashedSpacer"></div>
+
+        <div class="developmentSteps">
+          <div class="developmentStyleStepIcon toRightLeft">
+            <img src="./img/pen.svg" alt="" />
+          </div>
+          <div class="developmentStyleStepText">デザイン</div>
+        </div>
+
+        <div class="dashedSpacer"></div>
+
+        <div class="developmentSteps">
+          <div class="developmentStyleStepIcon toRightLeft">
+            <img src="./img/code.svg" alt="" />
+          </div>
+          <div class="developmentStyleStepText">開発</div>
+        </div>
+        <div class="dashedSpacer"></div>
+        <div class="developmentSteps">
+          <div class="developmentStyleStepIcon toLeft">
+            <img src="./img/mobile.svg" alt="" />
+          </div>
+          <div class="developmentStyleStepText">テスト</div>
+        </div>
+      </div>
+    </div>
+    <div class="container fullwidthContent">
+      <div class="row developmentFeature--wrapper">
+        <div class="col-6 developmentFeature--wrapper__speed">
+          <div class="developmentFeature--wrapper__speed--icon">
+            <img src="./img/spped.png" alt="" class="speedIcon" />
+          </div>
+          <div class="developmentFeature--wrapper__contentWrapper">
+            <div class="developmentFeature--wrapper__contentWrapper--title">
+              Speed
+            </div>
+            <div class="developmentFeature--wrapper__contentWrapper--content">
+              <p>
+                アプリやWebサービスを中心に、最新の開発環境や技術を採用し、開発体制を内製化することで品質を担保し、スピーディーな開発を実現しています。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 developmentFeature--wrapper__quality">
+          <div class="developmentFeature--wrapper__quality--icon">
+            <img src="./img/quality.png" alt="" class="qualityIcon" />
+          </div>
+          <div class="developmentFeature--wrapper__contentWrapper">
+            <div class="developmentFeature--wrapper__contentWrapper--title">
+              Quality
+            </div>
+            <div class="developmentFeature--wrapper__contentWrapper--content">
+              <p>
+                当社には、自社でさまざまなサービスを開発し、運営してきた経験があります。そこで蓄積した経験やノウハウを活かし、お客様が展開されるサービスや事業全体の理解を深めることで、安定したシステムの構築を実現しています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Development Style Section End-->
+  <div class="container-xl development-flow-hr">
+    <hr />
+  </div>
+
+  <!-- Development Flow start -->
+  <section class="development-flow" id="development-flow">
+    <div class="btn-title">
+      <div class="sectionTitleBg">開発の流れ</div>
+      <p>
+        クライアントのビジネスパートナーとして会話を重視しながら“計画的かつ柔軟“に納品まで進んでいきます
+      </p>
+    </div>
+    <div class="cards">
+      <div class="card-1">
+        <div class="image-container">
+          <svg width="48" height="48" class="image" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M47.112 42.824L41.364 37.076C41.1765 36.8885 40.9222 36.7832 40.657 36.7832C40.3918 36.7832 40.1375 36.8885 39.95 37.076L39.22 37.806L37.725 36.311C38.7761 35.0566 39.5348 33.584 39.946 32H41C41.2652 32 41.5196 31.8946 41.7071 31.7071C41.8946 31.5196 42 31.2652 42 31V1C42 0.734784 41.8946 0.48043 41.7071 0.292893C41.5196 0.105357 41.2652 0 41 0C32.463 0 23.865 1.858 21 5.925C18.135 1.858 9.537 0 1 0C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1L0 31C0 31.2652 0.105357 31.5196 0.292893 31.7071C0.48043 31.8946 0.734784 32 1 32C1.682 32 2.34867 32.0077 3 32.023V39C3.00025 39.1659 3.04178 39.3292 3.12085 39.475C3.19991 39.6209 3.31403 39.7448 3.45291 39.8356C3.59179 39.9263 3.75108 39.9811 3.91641 39.995C4.08175 40.0089 4.24794 39.9814 4.4 39.915C7.7 38.464 17 35.415 20.29 38.707C20.4298 38.8469 20.6081 38.9422 20.8021 38.9809C20.9961 39.0195 21.1972 38.9997 21.38 38.924C21.402 38.915 21.419 38.898 21.441 38.887V38.895L22.708 38.261C24.7146 39.6894 27.1384 40.4116 29.5995 40.3146C32.0606 40.2176 34.42 39.3068 36.308 37.725L37.803 39.22L37.073 39.95C36.8855 40.1375 36.7802 40.3918 36.7802 40.657C36.7802 40.9222 36.8855 41.1765 37.073 41.364L42.82 47.111C43.1015 47.3926 43.4357 47.616 43.8035 47.7685C44.1714 47.921 44.5656 47.9995 44.9638 47.9996C45.362 47.9997 45.7563 47.9213 46.1242 47.769C46.4921 47.6168 46.8264 47.3935 47.108 47.112C47.3896 46.8305 47.613 46.4963 47.7655 46.1285C47.918 45.7606 47.9965 45.3664 47.9966 44.9682C47.9967 44.57 47.9183 44.1757 47.766 43.8078C47.6138 43.4399 47.3905 43.1056 47.109 42.824H47.112ZM22 9C22 5.133 29.669 2.188 40 2.009V26.536C39.5554 24.6908 38.6471 22.9896 37.361 21.5937C36.0749 20.1979 34.4537 19.1535 32.651 18.5596C30.8483 17.9657 28.9238 17.8419 27.0598 18.2001C25.1959 18.5582 23.4543 19.3863 22 20.606V9ZM2 30.006V2.006C12.331 2.188 20 5.133 20 9V22.8C18.967 24.2787 18.3099 25.9869 18.0857 27.7768C17.8614 29.5666 18.0767 31.3841 18.713 33.072C14.566 30.649 7.335 30.066 2 30.006ZM5 37.519V32.1C11.906 32.448 16.792 33.724 18.875 35.68C14.355 34.336 7.844 36.441 5 37.519ZM35.639 35.639C34.1404 37.1377 32.1685 38.0704 30.0592 38.2782C27.95 38.4861 25.834 37.9561 24.0717 36.7787C22.3094 35.6012 21.0099 33.8491 20.3946 31.821C19.7793 29.7928 19.8862 27.6141 20.6972 25.6559C21.5082 23.6978 22.9731 22.0814 24.8422 21.0823C26.7114 20.0831 28.8691 19.7629 30.9479 20.1763C33.0266 20.5897 34.8977 21.7111 36.2423 23.3494C37.5869 24.9877 38.3219 27.0416 38.322 29.161C38.3254 30.3646 38.09 31.5568 37.6295 32.6688C37.1689 33.7807 36.4924 34.7903 35.639 35.639ZM42.813 44.272L39.2 40.657L40.66 39.197L44.275 42.813L42.813 44.272ZM45.7 45.7C45.5038 45.8882 45.2424 45.9932 44.9705 45.9932C44.6986 45.9932 44.4372 45.8882 44.241 45.7L44.23 45.689L45.689 44.23L45.701 44.241C45.7969 44.3368 45.8729 44.4505 45.9248 44.5756C45.9767 44.7008 46.0034 44.835 46.0034 44.9705C46.0034 45.106 45.9767 45.2402 45.9248 45.3654C45.8729 45.4905 45.7959 45.6042 45.7 45.7Z"
+              fill="#001665" />
+            <path
+              d="M24.1426 24.143L25.5566 25.557C26.5128 24.6019 27.8091 24.0655 29.1606 24.0655C30.5121 24.0655 31.8083 24.6019 32.7646 25.557L34.1786 24.143C32.8473 22.813 31.0424 22.0659 29.1606 22.0659C27.2787 22.0659 25.4739 22.813 24.1426 24.143Z"
+              fill="#001665" />
+            <path d="M6 4H4V10H6V4Z" fill="#001665" />
+            <path d="M6 12H4V14H6V12Z" fill="#001665" />
+          </svg>
+        </div>
+        <div class="contents">
+          <h1>要件定義</h1>
+          <p>
+            お客様のビジネスやサービスに一歩も二歩も踏み込んだご提案ができるのも当社の大きな強みです。発注が初めてというお客様にも、安心していただける丁寧な対応と手厚いサポート体制をご用意しています。
+          </p>
+        </div>
+      </div>
+      <div class="card-2">
+        <div class="image-container">
+          <svg width="48" height="61" viewBox="0 0 48 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#001665"
+              d="M43.9373 13.5478C44.3976 13.5484 44.8487 13.3877 45.24 13.0836C45.6313 12.7796 45.947 12.3443 46.1517 11.8271C46.3563 11.3098 46.4416 10.731 46.3981 10.1561C46.3545 9.58118 46.1837 9.03298 45.9051 8.57337C45.6264 8.11376 45.2509 7.76103 44.821 7.55498C44.3911 7.34894 43.9239 7.29778 43.472 7.40728C43.0201 7.51678 42.6017 7.78258 42.2638 8.17469C41.9259 8.5668 41.6821 9.0696 41.5598 9.62637H26.831V7.72001C26.8309 7.50164 26.7617 7.29224 26.6387 7.13783C26.5156 6.98341 26.3487 6.89661 26.1747 6.89648H21.8247C21.6507 6.89661 21.4838 6.98341 21.3608 7.13783C21.2377 7.29224 21.1686 7.50164 21.1685 7.72001V9.76801H6.46847C6.33697 9.03686 5.99867 8.39033 5.51631 7.94828C5.03394 7.50623 4.44022 7.29864 3.84519 7.36399C3.25017 7.42934 2.69421 7.7632 2.28036 8.30368C1.86652 8.84416 1.62287 9.5546 1.59457 10.3033C1.56627 11.052 1.75525 11.7882 2.12647 12.3754C2.4977 12.9626 3.02598 13.361 3.61341 13.4967C4.20083 13.6325 4.80755 13.4963 5.32109 13.1136C5.83463 12.7308 6.22016 12.1273 6.40622 11.4151H16.1967C9.78422 14.4739 5.08922 21.1859 4.00435 29.3967H2.24972C2.0757 29.3968 1.90884 29.4837 1.78579 29.6381C1.66274 29.7925 1.59357 30.0019 1.59347 30.2203V35.6791C1.59347 35.8975 1.66261 36.107 1.78568 36.2614C1.90875 36.4158 2.07567 36.5026 2.24972 36.5026H6.59972C6.77377 36.5026 6.94069 36.4158 7.06376 36.2614C7.18683 36.107 7.25597 35.8975 7.25597 35.6791V30.2203C7.25587 30.0019 7.1867 29.7925 7.06365 29.6381C6.9406 29.4837 6.77374 29.3968 6.59972 29.3967H5.33222C6.66385 20.0941 13.0253 12.9097 21.1685 11.52V13.1788C21.1685 13.3973 21.2376 13.6067 21.3607 13.7612C21.4838 13.9156 21.6507 14.0024 21.8247 14.0024H22.7716L12.8315 32.6588C12.7675 32.7791 12.7298 32.9184 12.7223 33.0627C12.7148 33.207 12.7377 33.3513 12.7887 33.481L17.333 45.0381C16.4803 45.9758 15.7978 47.132 15.3317 48.4289C14.8655 49.7258 14.6265 51.1331 14.6307 52.5558C14.6391 52.7669 14.7118 52.9659 14.8338 53.1117C14.9558 53.2574 15.1178 53.3387 15.2862 53.3388H32.7132C32.8817 53.3389 33.0437 53.2576 33.1657 53.1118C33.2878 52.966 33.3604 52.7669 33.3687 52.5558C33.373 51.1331 33.1339 49.7258 32.6678 48.4289C32.2016 47.132 31.5192 45.9758 30.6665 45.0381L35.2122 33.4786C35.2632 33.3489 35.2861 33.2047 35.2786 33.0604C35.2711 32.916 35.2335 32.7768 35.1695 32.6565L25.2278 14.0024H26.1747C26.3488 14.0024 26.5157 13.9156 26.6388 13.7612C26.7618 13.6067 26.831 13.3973 26.831 13.1788V11.52C34.9741 12.9097 41.3356 20.0955 42.6672 29.3967H41.3997C41.2257 29.3968 41.0588 29.4837 40.9358 29.6381C40.8127 29.7925 40.7436 30.0019 40.7435 30.2203V35.6791C40.7435 35.8975 40.8126 36.107 40.9357 36.2614C41.0588 36.4158 41.2257 36.5026 41.3997 36.5026H45.7497C45.9238 36.5026 46.0907 36.4158 46.2138 36.2614C46.3368 36.107 46.406 35.8975 46.406 35.6791V30.2203C46.4059 30.0019 46.3367 29.7925 46.2137 29.6381C46.0906 29.4837 45.9237 29.3968 45.7497 29.3967H43.9951C42.8933 21.0565 38.0671 14.2621 31.4997 11.2734H41.5606C41.7044 11.9263 42.0147 12.502 42.4439 12.9127C42.8731 13.3234 43.3976 13.5465 43.9373 13.5478ZM5.94347 34.8555H2.90597V31.0438H5.94347V34.8555ZM45.0935 34.8555H42.056V31.0438H45.0935V34.8555ZM43.9373 8.9986C44.1661 8.9986 44.3897 9.08372 44.5799 9.24319C44.7701 9.40266 44.9183 9.62932 45.0058 9.89451C45.0933 10.1597 45.1162 10.4515 45.0716 10.733C45.027 11.0146 44.9169 11.2731 44.7551 11.4761C44.5934 11.6791 44.3873 11.8173 44.163 11.8733C43.9386 11.9293 43.7061 11.9006 43.4948 11.7907C43.2835 11.6809 43.1028 11.4949 42.9758 11.2562C42.8487 11.0175 42.7808 10.7369 42.7808 10.4499C42.7811 10.0651 42.9031 9.69618 43.1199 9.42409C43.3367 9.152 43.6307 8.99898 43.9373 8.9986ZM4.0621 11.9007C3.83335 11.9007 3.60974 11.8156 3.41954 11.6561C3.22935 11.4966 3.08112 11.2699 2.9936 11.0047C2.90607 10.7395 2.88319 10.4477 2.92785 10.1661C2.9725 9.88458 3.08268 9.62599 3.24446 9.42304C3.40624 9.22009 3.61234 9.08191 3.83671 9.02596C4.06107 8.97001 4.29361 8.99882 4.50493 9.10874C4.71625 9.21866 4.89684 9.40475 5.02387 9.64347C5.15091 9.8822 5.21867 10.1628 5.2186 10.4499C5.2183 10.8346 5.09635 11.2035 4.87951 11.4755C4.66268 11.7476 4.36869 11.9005 4.0621 11.9007ZM23.9997 30.2513C24.425 30.2513 24.8407 30.4096 25.1943 30.706C25.5479 31.0025 25.8235 31.4239 25.9863 31.9169C26.149 32.41 26.1916 32.9525 26.1087 33.4759C26.0257 33.9993 25.821 34.4801 25.5203 34.8575C25.2196 35.2349 24.8365 35.4919 24.4194 35.5961C24.0024 35.7003 23.57 35.6469 23.1771 35.4428C22.7842 35.2386 22.4484 34.8928 22.212 34.4491C21.9757 34.0055 21.8495 33.4838 21.8495 32.9501C21.85 32.2346 22.0767 31.5486 22.4798 31.0426C22.8829 30.5367 23.4296 30.2521 23.9997 30.2513ZM32.0307 51.6918H15.9721C16.0573 50.604 16.3135 49.5482 16.7259 48.5854C17.1383 47.6227 17.6987 46.7721 18.3747 46.0828H29.6247C30.3035 46.7693 30.866 47.6191 31.2792 48.5823C31.6924 49.5456 31.9479 50.6028 32.0307 51.6918ZM29.4398 44.4358H18.5596L14.1331 33.1765L23.3435 15.8923V28.6852C22.4978 28.89 21.7433 29.483 21.2272 30.3485C20.7112 31.2139 20.4707 32.2895 20.5527 33.3655C20.6347 34.4415 21.0333 35.4404 21.6706 36.1674C22.308 36.8944 23.1384 37.2973 23.9997 37.2973C24.861 37.2973 25.6914 36.8944 26.3288 36.1674C26.9662 35.4404 27.3648 34.4415 27.4468 33.3655C27.5287 32.2895 27.2882 31.2139 26.7722 30.3485C26.2562 29.483 25.5017 28.89 24.656 28.6852V15.8923L33.8663 33.1765L29.4398 44.4358ZM25.5185 12.3553H22.481V8.54354H25.5185V12.3553Z" />
+          </svg>
+        </div>
+
+        <div class="contents">
+          <h1>デザイン</h1>
+          <p>
+            最新のデザインツールFigmaを採り入れ、デザイン面にもこだわります。
+            開発会社でありながら、デザインの実績が豊富なメンバーがいますのでご安心ください。
+          </p>
+        </div>
+      </div>
+      <div class="card-3">
+        <div class="image-container">
+          <svg width="48" height="44" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.8293 43.216C7.55514 43.216 0.00976562 35.593 0.00976562 26.2229C0.00976562 16.8524 7.55514 9.229 16.8293 9.229V10.729C8.38202 10.729 1.50977 17.6796 1.50977 26.2229C1.50977 34.7658 8.38202 41.716 16.8293 41.716C23.574 41.716 29.4529 37.3443 31.458 30.8369L32.8913 31.2786C30.6915 38.4186 24.2366 43.216 16.8293 43.216Z"
+              fill="#001665" />
+            <path
+              d="M20.1021 11.0682C19.0352 10.8342 17.9354 10.7153 16.834 10.7153V9.21533C18.0437 9.21533 19.2512 9.34621 20.4239 9.60308L20.1021 11.0682Z"
+              fill="#001665" />
+            <path
+              d="M16.8334 43.2291C11.1957 43.2291 6.7793 35.7584 6.7793 26.2214C6.7793 16.6847 11.1957 9.21436 16.8334 9.21436V10.7144C12.1167 10.7144 8.2793 17.671 8.2793 26.2214C8.2793 34.7725 12.1167 41.7291 16.8334 41.7291C20.9884 41.7291 24.618 36.1094 25.2765 28.6566L26.7705 28.7886C26.0314 37.156 21.852 43.2291 16.8334 43.2291Z"
+              fill="#001665" />
+            <path d="M17.582 9.96484H16.082V42.4785H17.582V9.96484Z" fill="#001665" />
+            <path
+              d="M31.8683 32.7017H1.27387L1.092 32.2131C0.3675 30.2657 0 28.2501 0 26.2217C0 24.1904 0.36825 22.174 1.09425 20.2281L1.2765 19.7402H20.9085V21.2402H2.3265C1.77787 22.8655 1.5 24.5391 1.5 26.2217C1.5 27.9021 1.77712 29.5746 2.325 31.2017H31.8683V32.7017Z"
+              fill="#001665" />
+            <path
+              d="M35.8457 30.1445H30.5946L30.2852 26.3979C29.3421 26.1196 28.4443 25.7199 27.6055 25.2046L24.8665 27.5469L21.1611 23.7991L23.56 20.9311C23.086 20.0585 22.7301 19.1304 22.4976 18.1602L18.9238 17.8591V12.5686L22.63 12.2559C22.9067 11.2977 23.3038 10.3872 23.8161 9.53711L21.5016 6.77148L25.2092 3.02448L28.0491 5.45411C28.9101 4.97748 29.8243 4.61973 30.7795 4.38498L31.0772 0.771484H36.3291L36.6381 4.51923C37.5812 4.79711 38.4786 5.19686 39.3178 5.71248L42.0561 3.37023L45.7633 7.11798L43.363 9.98523C43.8366 10.8586 44.1928 11.7875 44.4257 12.7572L47.9991 13.0572V18.3481L44.2933 18.6601C44.0173 19.6175 43.6198 20.528 43.1068 21.3796L45.4217 24.1445L41.7145 27.8919L38.8735 25.4626C38.0132 25.9385 37.099 26.2962 36.1438 26.531L35.8457 30.1445ZM31.9757 28.6445H34.4642L34.741 25.289L35.2997 25.1814C36.46 24.9579 37.5572 24.53 38.5603 23.9086L39.0261 23.6202L41.6282 25.8459L43.3945 24.0605L41.242 21.4899L41.5562 21.0219C42.2203 20.0349 42.697 18.9455 42.973 17.7841L43.0986 17.2557L46.4991 16.9692V14.4365L43.1781 14.1571L43.0723 13.5965C42.8507 12.4209 42.4262 11.309 41.8112 10.2924L41.5337 9.83336L43.7376 7.20123L41.9721 5.41623L39.4303 7.59048L38.9556 7.26461C37.9798 6.59411 36.904 6.11336 35.758 5.83511L35.2318 5.70723L34.9487 2.27073H32.4591L32.1827 5.62736L31.6236 5.73498C30.4637 5.95736 29.3668 6.38561 28.3633 7.00773L27.8972 7.29648L25.2951 5.07048L23.5292 6.85511L25.6813 9.42648L25.3671 9.89448C24.7045 10.8796 24.2282 11.9686 23.9507 13.1319L23.8251 13.6595L20.425 13.9467V16.4799L23.7475 16.7596L23.8528 17.3206C24.0733 18.4959 24.4975 19.6066 25.1132 20.6217L25.3915 21.0804L23.188 23.7144L24.9531 25.4994L27.4948 23.3259L27.9696 23.6517C28.9442 24.3215 30.0201 24.8022 31.1668 25.0812L31.6926 25.2091L31.9757 28.6445Z"
+              fill="#001665" />
+            <path
+              d="M33.4631 21.9837C29.8991 21.9837 27 19.0561 27 15.4584C27 11.8599 29.8991 8.93262 33.4631 8.93262C37.0268 8.93262 39.9259 11.8602 39.9259 15.4584C39.9263 19.0561 37.0268 21.9837 33.4631 21.9837ZM33.4631 10.4322C30.7264 10.4322 28.5 12.6867 28.5 15.458C28.5 18.2292 30.7268 20.4834 33.4631 20.4834C36.1995 20.4834 38.4259 18.2289 38.4259 15.458C38.4263 12.6867 36.1999 10.4322 33.4631 10.4322Z"
+              fill="#001665" />
+          </svg>
+        </div>
+
+        <div class="contents">
+          <h1>開発</h1>
+          <p>
+            お客様のビジネスやサービスに一歩も二歩も踏み込んだご提案ができるのも当社の大きな強みです。発注が初めてというお客様にも、安心していただける丁寧な対応と手厚いサポート体制をご用意しています。
+          </p>
+        </div>
+      </div>
+      <div class="card-4">
+        <div class="image-container">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M36.4975 30.6514C36.9175 30.1964 37.1503 29.5997 37.1496 28.9804H37.1466L37.1545 25.8492L39.5845 24.4943L39.6032 24.4853C39.6175 24.4789 39.6317 24.4718 39.646 24.4647L39.6771 24.4482C39.7083 24.4335 39.7385 24.4167 39.7675 24.3979C40.3183 24.0699 40.72 23.5407 40.888 22.922C41.0559 22.3034 40.9768 21.6437 40.6675 21.0822C40.6559 21.0597 40.6435 21.0372 40.63 21.0151L39.0824 18.3184L40.5325 15.8918L40.5554 15.8543L40.5647 15.8389L40.5715 15.8273C40.5794 15.8157 40.5865 15.8033 40.5936 15.7898C40.7563 15.5091 40.8621 15.1992 40.9049 14.8776C40.9477 14.5561 40.9267 14.2292 40.8431 13.9158C40.7595 13.6023 40.615 13.3084 40.4177 13.0509C40.2205 12.7933 39.9744 12.5772 39.6936 12.4148L36.9797 10.8398L37.0225 7.99243C37.0253 7.96514 37.0266 7.93773 37.0266 7.91031V7.89043C37.0265 7.56711 36.9626 7.247 36.8387 6.94837C36.7148 6.64975 36.5332 6.37848 36.3044 6.15005C36.0758 5.92045 35.8041 5.73824 35.5049 5.61385C35.2058 5.48946 34.885 5.42534 34.561 5.42518V5.42818L31.4294 5.42031L30.0752 2.9933C30.0666 2.97268 30.0572 2.95205 30.0467 2.9318C30.0362 2.91155 30.019 2.8808 30.0002 2.85005V2.84518C29.6753 2.27661 29.138 1.86026 28.5063 1.68757C27.8746 1.51489 27.2002 1.59999 26.6312 1.92418L26.6252 1.9268L23.8975 3.49243L21.502 2.06255L21.4754 2.04493L21.4379 2.02093L21.4202 2.01005L21.4105 2.00405C21.3981 1.99618 21.3857 1.9883 21.373 1.9808C21.0923 1.81818 20.7824 1.71245 20.4608 1.66967C20.1393 1.62689 19.8124 1.64789 19.499 1.73147C19.1856 1.81505 18.8917 1.95957 18.6341 2.15678C18.3766 2.35399 18.1604 2.60002 17.998 2.8808L16.423 5.59468L13.5752 5.55006C13.548 5.5473 13.5205 5.54592 13.4931 5.54593H13.4732C12.8429 5.54522 12.2365 5.78689 11.7794 6.22093C11.7617 6.23556 11.7445 6.25131 11.728 6.26781C11.4985 6.49669 11.3165 6.76866 11.1924 7.0681C11.0683 7.36754 11.0046 7.68855 11.005 8.01268H11.008L11.0001 11.1439L8.57012 12.4988L8.55062 12.5082C8.53675 12.5146 8.5225 12.5213 8.509 12.5284L8.45275 12.5581H8.45087L8.43437 12.5671H8.4325L8.42762 12.5697C7.85898 12.8945 7.44256 13.4319 7.26987 14.0636C7.09717 14.6953 7.18233 15.3697 7.50662 15.9387L7.50925 15.9436L9.07487 18.6709L7.6435 21.0664L7.62587 21.0931L7.60187 21.1306L7.591 21.1482L7.58575 21.1572C7.5775 21.1699 7.56962 21.1827 7.56175 21.1947C7.39917 21.4754 7.29348 21.7853 7.25073 22.1069C7.20797 22.4284 7.22898 22.7552 7.31256 23.0686C7.39614 23.382 7.54064 23.6759 7.73783 23.9335C7.93501 24.191 8.181 24.4072 8.46175 24.5697L11.1756 26.1447L11.1329 28.9921C11.13 29.0193 11.1287 29.0467 11.1287 29.0742V29.0941C11.126 29.5892 11.2729 30.0736 11.5502 30.4838L5.52812 40.9126C5.44275 41.0531 5.40368 41.2168 5.41642 41.3807C5.42916 41.5446 5.49308 41.7004 5.59913 41.826C5.70519 41.9516 5.84803 42.0407 6.00748 42.0808C6.16693 42.1208 6.33492 42.1098 6.48775 42.0492L11.8622 39.9177L12.7037 45.6376C12.7282 45.7984 12.802 45.9477 12.9148 46.0649C13.0275 46.1822 13.1739 46.2616 13.3336 46.2923C13.4934 46.323 13.6588 46.3035 13.807 46.2364C13.9552 46.1693 14.079 46.058 14.1614 45.9177L20.2364 35.3937C20.6743 35.4051 21.1073 35.2995 21.4907 35.0877C21.5132 35.0764 21.5357 35.0637 21.5579 35.0502L24.2545 33.5026L26.7171 34.9752C27.0065 35.1557 27.3304 35.2739 27.6681 35.3221L33.8181 45.9721C33.8945 46.12 34.0159 46.24 34.1648 46.3147C34.3137 46.3893 34.4824 46.4149 34.6467 46.3876C34.811 46.3604 34.9625 46.2817 35.0793 46.163C35.1961 46.0443 35.2722 45.8915 35.2967 45.7268L36.1379 40.0054L41.5124 42.1369C41.6636 42.1965 41.8296 42.2076 41.9874 42.1688C42.1452 42.13 42.2871 42.0431 42.3934 41.9202C42.4998 41.7973 42.5654 41.6445 42.5811 41.4827C42.5969 41.3209 42.562 41.1583 42.4814 41.0172L36.4975 30.6514ZM13.9319 43.1764L13.2752 38.7083C13.2572 38.5857 13.2105 38.4691 13.1389 38.368C13.0673 38.2668 12.9729 38.184 12.8633 38.1262C12.7537 38.0685 12.632 38.0374 12.5081 38.0355C12.3842 38.0336 12.2616 38.061 12.1502 38.1154L8.00537 39.7594L12.8076 31.4412C13.0048 31.508 13.2097 31.5493 13.4174 31.5642H13.4297H13.4425H13.4549H13.4676H13.48H13.4924H13.594V31.5676L16.7252 31.5754C18.5054 34.7772 17.95 33.7527 18.127 34.0992C18.2823 34.3842 18.4911 34.6366 18.742 34.8424L13.9319 43.1764ZM28.7736 33.3638L28.7185 33.4407C28.656 33.5186 28.5807 33.5853 28.4957 33.6379C28.3929 33.7023 28.2781 33.7453 28.1582 33.7643C28.1335 33.7681 28.1087 33.7711 28.0832 33.7726C27.6411 33.8044 27.7037 33.6976 24.6659 31.9182C24.5462 31.8466 24.4097 31.8082 24.2703 31.8069C24.1309 31.8056 23.9937 31.8414 23.8727 31.9107L20.7482 33.7039H20.746C20.6432 33.7621 20.53 33.7995 20.4127 33.8138C20.2955 33.8282 20.1765 33.8192 20.0627 33.7876C19.8363 33.7276 19.6429 33.5801 19.525 33.3777L19.5239 33.3751L19.5212 33.3702C19.4357 33.2101 19.4556 33.2464 19.4462 33.2318L17.8754 30.4141C17.8051 30.2875 17.7011 30.1829 17.575 30.1117C17.449 30.0406 17.3057 30.0057 17.161 30.0109L13.5944 30.0001V29.9971H13.5377C13.3985 29.9887 13.2631 29.9479 13.1425 29.8778H13.1406H13.1384L13.1342 29.8752H13.1316L13.1252 29.8639L13.1215 29.8617C13.0858 29.8391 13.0517 29.814 13.0195 29.7867C13.0002 29.7707 12.982 29.7539 12.9647 29.7364C12.8815 29.6537 12.8155 29.5553 12.7705 29.4469C12.7254 29.3385 12.7022 29.2223 12.7022 29.1049C12.7022 29.0847 12.7022 29.0641 12.7 29.0442L12.7502 25.7131C12.7519 25.5739 12.7166 25.4368 12.6478 25.3158C12.579 25.1948 12.4792 25.0943 12.3587 25.0246L9.24625 23.2178C9.14426 23.1588 9.0549 23.0802 8.98327 22.9866C8.91164 22.893 8.85914 22.7863 8.82878 22.6724C8.79841 22.5585 8.79077 22.4398 8.8063 22.323C8.82182 22.2062 8.8602 22.0935 8.91925 21.9916L8.92562 21.9799L8.94962 21.9424C8.96312 21.9214 8.97512 21.8997 8.98712 21.8776L10.6562 19.0876C10.7278 18.968 10.7663 18.8316 10.7676 18.6922C10.769 18.5529 10.7333 18.4158 10.6641 18.2948L8.89037 15.2041C8.88025 15.1842 8.86937 15.1666 8.85812 15.1467C8.75075 14.9448 8.72425 14.7096 8.78401 14.4889C8.84377 14.2681 8.98531 14.0784 9.17987 13.9583C9.2005 13.9474 9.22037 13.9358 9.23987 13.9234L9.26462 13.9096C9.28112 13.9017 9.29762 13.8934 9.31337 13.8844L12.1634 12.2967C12.2899 12.2264 12.3945 12.1224 12.4657 11.9963C12.5368 11.8703 12.5717 11.727 12.5665 11.5823L12.5755 8.01718H12.5785C12.5785 7.89981 12.6016 7.7836 12.6467 7.67522C12.6917 7.56684 12.7578 7.46844 12.841 7.38568C12.8507 7.3763 12.8597 7.36656 12.8691 7.35643C13.0344 7.20644 13.2497 7.12365 13.4729 7.1243C13.4931 7.1243 13.5137 7.12431 13.5336 7.12206L16.8617 7.17193C17.0011 7.17346 17.1383 7.13787 17.2593 7.0688C17.3803 6.99973 17.4807 6.89967 17.5502 6.77893L19.357 3.66643C19.4763 3.46052 19.6725 3.31043 19.9025 3.24917C20.1324 3.18792 20.3773 3.22052 20.5832 3.3398L20.5945 3.34618L20.632 3.37018C20.6534 3.38368 20.6747 3.39568 20.6969 3.40768L23.488 5.0753C23.6076 5.14682 23.744 5.18525 23.8833 5.18663C24.0226 5.18801 24.1598 5.15231 24.2808 5.08318L27.3715 3.30905C27.391 3.29893 27.409 3.28843 27.4289 3.2768C27.6308 3.16946 27.866 3.14302 28.0868 3.20285C28.3075 3.26269 28.4972 3.4043 28.6172 3.59893C28.6247 3.61355 28.633 3.62818 28.6416 3.64243L28.6484 3.65518L28.6649 3.68518V3.6878C28.6774 3.71354 28.6913 3.73858 28.7065 3.7628L30.2774 6.58093C30.3477 6.70747 30.4516 6.8121 30.5777 6.88324C30.7038 6.95439 30.8471 6.98928 30.9917 6.98406L34.5569 6.99306V6.99605C34.674 6.9954 34.79 7.01789 34.8984 7.06223C35.0068 7.10657 35.1053 7.17189 35.1884 7.25443C35.2716 7.33721 35.3376 7.43562 35.3826 7.54399C35.4277 7.65236 35.4509 7.76857 35.4509 7.88593C35.4509 7.90655 35.4509 7.92681 35.4531 7.94668L35.4032 11.2748C35.4016 11.4139 35.4369 11.551 35.5056 11.672C35.5744 11.793 35.674 11.8935 35.7944 11.9633L38.9069 13.7704C39.1125 13.8898 39.2624 14.0859 39.3236 14.3157C39.3847 14.5455 39.3522 14.7901 39.2331 14.9959L39.2226 15.0143L39.2012 15.0477L39.1847 15.0751L37.4972 17.9003C37.4259 18.02 37.3876 18.1565 37.3862 18.2958C37.3848 18.4351 37.4204 18.5724 37.4894 18.6934L39.2826 21.8179V21.8202C39.3997 22.0271 39.4301 22.2719 39.3673 22.5011C39.3045 22.7304 39.1535 22.9255 38.9474 23.0438L38.9421 23.0472L38.9129 23.0641L38.8877 23.0779C38.8712 23.0858 38.8547 23.0941 38.8386 23.1031L35.9905 24.6908C35.8624 24.762 35.7569 24.8675 35.6857 24.9956C35.6145 25.1236 35.5806 25.269 35.5877 25.4153L35.5787 28.9804H35.5757C35.5758 29.0978 35.5526 29.214 35.5076 29.3224C35.4625 29.4308 35.3965 29.5292 35.3132 29.6119C35.2199 29.7028 35.1085 29.7731 34.9863 29.8183C34.8641 29.8635 34.7338 29.8826 34.6037 29.8744L31.3412 29.8253C31.1942 29.8148 31.0471 29.8457 30.9168 29.9147C30.7864 29.9836 30.6781 30.0878 30.604 30.2153L28.7736 33.3638ZM35.7936 38.1814C35.6836 38.1379 35.5651 38.1198 35.4471 38.1285C35.3291 38.1371 35.2145 38.1724 35.112 38.2316C35.0095 38.2907 34.9218 38.3723 34.8552 38.4702C34.7887 38.5681 34.7452 38.6797 34.7279 38.7968H34.7252L34.0686 43.2634L29.2945 34.9932L29.3267 34.9733C29.5698 34.8217 29.7845 34.6288 29.9613 34.4033C30.0426 34.2991 31.8486 31.2004 31.7309 31.4033C32.5724 31.4168 33.5684 31.4322 34.813 31.4464H34.8269C34.9261 31.4407 35.0249 31.4289 35.1227 31.4112L39.9951 39.8487L35.7936 38.1814Z"
+              fill="#001665" />
+            <path
+              d="M34.7511 18.4977C34.7512 16.0281 33.8951 13.6349 32.3284 11.7258C30.7618 9.81668 28.5817 8.50985 26.1596 8.02796C23.7375 7.54607 21.2232 7.91894 19.0451 9.08303C16.8671 10.2471 15.1601 12.1304 14.215 14.412C13.2698 16.6936 13.1451 19.2323 13.8619 21.5956C14.5788 23.9589 16.0929 26.0005 18.1463 27.3725C20.1997 28.7446 22.6653 29.3622 25.123 29.1201C27.5807 28.878 29.8785 27.7913 31.6247 26.045C32.6174 25.055 33.4046 23.8786 33.9411 22.5834C34.4776 21.2882 34.7529 19.8997 34.7511 18.4977ZM24.0756 27.596C21.9709 27.5958 19.9313 26.8659 18.3045 25.5305C16.6776 24.1952 15.5641 22.3371 15.1536 20.2728C14.7431 18.2085 15.0611 16.0657 16.0533 14.2096C17.0456 12.3534 18.6507 10.8988 20.5952 10.0934C22.5398 9.28801 24.7034 9.18177 26.7174 9.79278C28.7315 10.4038 30.4714 11.6942 31.6407 13.4442C32.81 15.1942 33.3364 17.2955 33.1301 19.3901C32.9238 21.4847 31.9977 23.443 30.5095 24.9312C29.6655 25.7774 28.6626 26.4484 27.5585 26.9057C26.4543 27.363 25.2707 27.5976 24.0756 27.596Z"
+              fill="#001665" />
+            <path
+              d="M29.9222 16.0127C29.7761 15.8661 29.6025 15.7497 29.4113 15.6703C29.2201 15.5909 29.0151 15.55 28.8081 15.55V15.553L26.3394 15.5579L25.5966 13.2557L25.5872 13.2239C25.5108 12.9818 25.3776 12.7616 25.1987 12.5815C25.0423 12.4241 24.8543 12.3016 24.6471 12.2222C24.5921 12.1973 24.5345 12.1788 24.4753 12.1671C24.1002 12.0689 23.7021 12.1124 23.357 12.2891C23.0119 12.4659 22.744 12.7635 22.6044 13.1252C22.5832 13.1721 22.5666 13.221 22.5549 13.2711L21.8173 15.5564L19.4616 15.5534C19.119 15.5294 18.7779 15.6176 18.4899 15.8046C18.2019 15.9916 17.9826 16.2673 17.865 16.5899C17.7475 16.9126 17.7382 17.2648 17.8385 17.5932C17.9388 17.9216 18.1432 18.2085 18.421 18.4105L20.4186 19.8557L19.6521 22.2002C19.6438 22.2254 19.6371 22.2505 19.6315 22.2752C19.5448 22.5905 19.5585 22.925 19.6705 23.2322C19.7826 23.5394 19.9875 23.8041 20.2567 23.9895C20.526 24.175 20.8464 24.2721 21.1733 24.2673C21.5003 24.2625 21.8176 24.1561 22.0813 23.9627L24.076 22.5077L25.9776 23.8952C26.1832 24.0694 26.4299 24.1884 26.6942 24.241C26.9565 24.2922 27.2276 24.2757 27.4817 24.193H27.4851C27.6822 24.1292 27.8649 24.0271 28.0226 23.8927C28.1803 23.7582 28.31 23.5941 28.4043 23.4095C28.4986 23.2249 28.5555 23.0236 28.572 22.817C28.5885 22.6104 28.5641 22.4026 28.5002 22.2055V22.2017L27.7333 19.8572L29.6991 18.4341L29.7073 18.4289C29.7437 18.4047 29.7779 18.3774 29.8097 18.3475C29.9769 18.2098 30.1141 18.0393 30.2128 17.8465H30.2102C30.3632 17.5501 30.4177 17.2127 30.3659 16.8833C30.3141 16.5538 30.1587 16.2494 29.9222 16.0142V16.0127ZM28.8122 17.134H28.8096V17.1359C28.7946 17.1467 28.7799 17.1584 28.7661 17.17L26.3492 18.9186C26.2104 19.0193 26.1082 19.1626 26.0583 19.3267C26.0083 19.4907 26.0133 19.6666 26.0725 19.8276L26.992 22.6401C26.9965 22.6577 27.0017 22.6754 27.0073 22.6926V22.6945L26.9991 22.6952L26.9946 22.693C26.9663 22.669 26.9363 22.6471 26.905 22.6274L24.5424 20.9024C24.4064 20.8034 24.2422 20.7508 24.074 20.7523C23.9058 20.7538 23.7426 20.8093 23.6083 20.9106L21.1633 22.6941C21.1608 22.6949 21.158 22.6949 21.1555 22.6941L21.1521 22.6919V22.6892V22.6825C21.1561 22.6697 21.1598 22.6572 21.1633 22.645L22.0948 19.7976C22.146 19.6395 22.1459 19.4693 22.0944 19.3112C22.0429 19.1532 21.9428 19.0155 21.8083 18.9179L19.3442 17.1377L19.3397 17.1336C19.3398 17.1311 19.3408 17.1288 19.3423 17.1269C19.3453 17.1263 19.3484 17.1263 19.3513 17.1269C19.3878 17.1294 19.4244 17.1294 19.4608 17.1269L22.3888 17.1325C22.5556 17.1323 22.718 17.079 22.8525 16.9803C22.9869 16.8816 23.0864 16.7426 23.1366 16.5835L24.0696 13.6926C24.0705 13.6905 24.0721 13.6888 24.0741 13.6877C24.0757 13.6873 24.0774 13.6873 24.0789 13.6877H24.082V13.69C24.0868 13.7057 24.0921 13.7207 24.0981 13.7357L25.0168 16.582C25.0692 16.7463 25.1742 16.8887 25.3155 16.9874C25.4569 17.0861 25.6268 17.1355 25.7991 17.128L28.804 17.1224V17.1254H28.8081V17.1287C28.8081 17.1347 28.8133 17.1287 28.8111 17.1314L28.8122 17.134Z"
+              fill="#001665" />
+          </svg>
+        </div>
+
+        <div class="contents">
+          <h1>テスト</h1>
+          <p>
+            お客様のビジネスやサービスに一歩も二歩も踏み込んだご提案ができるのも当社の大きな強みです。発注が初めてというお客様にも、安心していただける丁寧な対応と手厚いサポート体制をご用意しています。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-title">
+      <p>
+        各開発フローごとに「こだわり」と「強み」を持って開発をしています。
+      </p>
+    </div>
+  </section>
+  <!-- Development Flow end -->
+
+  <!-- Development feature section start -->
+  <section class="developmentFeatureSection" id="developmentTeam">
+    <div class="container-xl">
+      <div class="main-title">
+        <div class="sectionTitleBg">開発の特徴</div>
+      </div>
+      <p class="p">
+        開発における要件定義から開発、デザインまで、上流工程から下流まで対応できます
+      </p>
+      <picture>
+        <source media="(max-width: 700px)" srcset="img/chart-sm.png">
+        <img src="img/chart1.png">
+      </picture>
+
+    </div>
+  </section>
+  <!-- Development feature section end -->
+
+  <!-- Development Result Start-->
+  <section id="development-result" class="container-xl">
+    <div class="row btn-title">
+      <div class="section-title">開発実績</div>
+      <p>
+        スタートアップ企業から自治体様、大手企業様まで幅広い開発実勢がございます。
+      </p>
+    </div>
+    <div class="result-card-list">
+      <div class="result-card">
+        <div class="result-card__title">
+          <h1>ライブ配信動画アプリ</h1>
+        </div>
+        <div class="result-card__img golf-match">
+          <img src="./img/results/golf-match.png" alt="" style="max-width: 300px" />
+          <img src="./img/an-icon1.png" alt="" class="an-icon-msg" />
+          <img src="./img/an-icon2.png" alt="" class="an-icon-globe" />
+          <img src="./img/an-icon3.png" alt="" class="an-icon-emoji" />
+          <img src="./img/an-icon4.png" alt="" class="an-icon-becon" />
+          <img src="./img/an-icon5.png" alt="" class="an-icon-play" />
+        </div>
+        <div class="result-card__body">
+          <h1>ライブ配信動画アプリ</h1>
+          <p>
+            ゴルファー向けにライブ配信アプリ。<br />
+            最新のトレンドを捉え、投げ銭、レコード、
+            スレッド機能等、幅広い機能を実装。<br />
+            クライアント様とのコミュニケーションを密に
+            とり、機能のアップデート、 仕様変更をスピーディーに実施。
+          </p>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="result-card__title">
+          <h1>健康管理システム</h1>
+        </div>
+        <div class="result-card__img">
+          <img src="./img/results/health.png" alt="" />
+          <img src="./img/an-icon6.png" class="an-icon-heart" alt="" />
+        </div>
+        <div class="result-card__body">
+          <h1>健康管理システム</h1>
+          <p>
+            ヘルスケア領域の新規サービスとして、健康支援サービスの比較サイトを構築。開発のみならず要件定義から
+            サービスのマネタイズ設計まで担当。 <br />
+            ウェビナー視聴、資料ダウンロードシステム等の
+            機能を実装。独自CMSの開発により、拡張性を持たせ、幅広い機能追加にも柔軟に対応。<br />
+          </p>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="result-card__title">
+          <h1>多言語求人サイト</h1>
+        </div>
+        <div class="result-card__img">
+          <img src="./img/results/qjj.png" alt="" />
+        </div>
+        <div class="result-card__body">
+          <h1>健康管理システム</h1>
+          <p>
+            多言語翻訳機能を搭載した求人サイト。 <br />
+            求人掲載機能、応募者管理機能等幅広い機能を
+            実装。サービス特徴を反映し、応募制限機能や
+            翻訳機能を搭載。独自CMSには応募者管理機能やSEO対策を講じた記事作成機能も実装。
+          </p>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="result-card__title">
+          <h1>電子契約システム</h1>
+        </div>
+        <div class="result-card__img">
+          <img src="./img/results/teacher.png" alt="" />
+        </div>
+        <div class="result-card__body">
+          <h1>健康管理システム</h1>
+          <p>
+            契約書の作成、送付、締結、保管管理まで、契約業務の全てを簡単に素早く行える電子契約
+            サービス。契約に関わる機密データを保護する
+            ための最新のセキュリティ対策等を実施。 <br />
+            新規サービスとして事業化を支援し、
+            開発のみならずデザインやLP作成等も実施。
+          </p>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="result-card__title">
+          <h1>アプリ開発</h1>
+        </div>
+        <div class="result-card__img">
+          <img src="./img/results/scene.png" alt="" />
+        </div>
+        <div class="result-card__body">
+          <h1>アプリ開発</h1>
+          <p>
+            周遊・魅力発見をサポートする自治体様の公式
+            アプリ。おすすめスポットやスタンプラリー、
+            お得なクーポンなど、幅広い機能を実装。<br />
+            要件定義からデザイン、開発まで一貫して対応。 <br />
+            他アプリ開発の実績多数。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Development Result End-->
+
+  <!--Board Member section Start-->
+  <section class="boardMembers" id="board-member">
+    <div><img src="./img/curve.svg" /></div>
+    <div class="board-container">
+      <div class="container-xl">
+        <div class="container">
+          <svg class="svg" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5 22.1958C13.8424 22.1958 12.2527 21.5373 11.0806 20.3652C9.90848 19.1931 9.25 17.6034 9.25 15.9458H10.5C10.5 17.2719 11.0268 18.5437 11.9645 19.4813C12.9021 20.419 14.1739 20.9458 15.5 20.9458C16.8261 20.9458 18.0979 20.419 19.0355 19.4813C19.9732 18.5437 20.5 17.2719 20.5 15.9458H21.75C21.75 17.6034 21.0915 19.1931 19.9194 20.3652C18.7473 21.5373 17.1576 22.1958 15.5 22.1958Z"
+              fill="#00B6B6" />
+            <path
+              d="M6.74955 8.44584C5.02455 8.44584 3.62455 6.76459 3.62455 4.69584C3.59484 4.27782 3.6553 3.8583 3.80184 3.46568C3.94838 3.07306 4.17757 2.71652 4.4739 2.42019C4.77023 2.12386 5.12677 1.89467 5.51939 1.74813C5.91201 1.60159 6.33153 1.54113 6.74955 1.57084C7.16757 1.54113 7.58709 1.60159 7.9797 1.74813C8.37232 1.89467 8.72886 2.12386 9.02519 2.42019C9.32152 2.71652 9.55072 3.07306 9.69726 3.46568C9.84379 3.8583 9.90426 4.27782 9.87455 4.69584C9.87455 6.76459 8.47455 8.44584 6.74955 8.44584ZM6.74955 2.82084C6.49656 2.79312 6.24057 2.82257 6.00048 2.907C5.76039 2.99143 5.54232 3.12869 5.36236 3.30865C5.1824 3.48861 5.04514 3.70668 4.96071 3.94677C4.87628 4.18686 4.84684 4.44285 4.87455 4.69584C4.87455 6.07709 5.7183 7.19584 6.74955 7.19584C7.7808 7.19584 8.62455 6.07709 8.62455 4.69584C8.65226 4.44285 8.62281 4.18686 8.53839 3.94677C8.45396 3.70668 8.3167 3.48861 8.13674 3.30865C7.95678 3.12869 7.7387 2.99143 7.49861 2.907C7.25852 2.82257 7.00254 2.79312 6.74955 2.82084Z"
+              fill="#001665" />
+            <path
+              d="M1.75006 14.6958H0.500058V10.6833C0.495371 9.91076 0.777016 9.16386 1.29063 8.58676C1.80425 8.00966 2.51343 7.64327 3.28131 7.5583L6.68131 7.1958L6.81881 8.4458L3.41881 8.82705C2.95808 8.87803 2.53257 9.09787 2.2244 9.44412C1.91623 9.79038 1.74725 10.2385 1.75006 10.7021V14.6958Z"
+              fill="#001665" />
+            <path d="M4.25 10.9458H3V15.9458H4.25V10.9458Z" fill="#001665" />
+            <path
+              d="M15.4995 7.82084C13.7745 7.82084 12.3745 6.13959 12.3745 4.07084C12.3448 3.65282 12.4053 3.2333 12.5518 2.84068C12.6984 2.44806 12.9276 2.09152 13.2239 1.79519C13.5202 1.49886 13.8768 1.26967 14.2694 1.12313C14.662 0.976589 15.0815 0.916127 15.4995 0.945836C15.9176 0.916127 16.3371 0.976589 16.7297 1.12313C17.1223 1.26967 17.4789 1.49886 17.7752 1.79519C18.0715 2.09152 18.3007 2.44806 18.4473 2.84068C18.5938 3.2333 18.6543 3.65282 18.6245 4.07084C18.6245 6.13959 17.2245 7.82084 15.4995 7.82084ZM15.4995 2.19584C15.2466 2.16812 14.9906 2.19757 14.7505 2.282C14.5104 2.36643 14.2923 2.50369 14.1124 2.68365C13.9324 2.86361 13.7951 3.08168 13.7107 3.32177C13.6263 3.56186 13.5968 3.81785 13.6245 4.07084C13.6245 5.45209 14.4683 6.57084 15.4995 6.57084C16.5308 6.57084 17.3745 5.45209 17.3745 4.07084C17.4023 3.81785 17.3728 3.56186 17.2884 3.32177C17.204 3.08168 17.0667 2.86361 16.8867 2.68365C16.7068 2.50369 16.4887 2.36643 16.2486 2.282C16.0085 2.19757 15.7525 2.16812 15.4995 2.19584Z"
+              fill="#001665" />
+            <path
+              d="M10.5001 14.6958H9.25006V10.0583C9.24537 9.28576 9.52702 8.53886 10.0406 7.96176C10.5543 7.38466 11.2634 7.01827 12.0313 6.9333L15.4313 6.5708L15.5688 7.8208L12.1688 8.20205C11.7081 8.25303 11.2826 8.47287 10.9744 8.81912C10.6662 9.16538 10.4972 9.61352 10.5001 10.0771V14.6958Z"
+              fill="#001665" />
+            <path d="M13 10.3208H11.75V15.9458H13V10.3208Z" fill="#001665" />
+            <path
+              d="M21.7504 14.6958H20.5004V10.0583C20.5032 9.59477 20.3342 9.14663 20.026 8.80037C19.7179 8.45412 19.2924 8.23428 18.8316 8.1833L15.4316 7.8208L15.5691 6.5708L18.9691 6.9458C19.737 7.03077 20.4462 7.39716 20.9598 7.97426C21.4734 8.55136 21.7551 9.29826 21.7504 10.0708V14.6958Z"
+              fill="#001665" />
+            <path d="M19.25 10.3208H18V15.9458H19.25V10.3208Z" fill="#001665" />
+            <path
+              d="M24.2495 8.44584C22.5245 8.44584 21.1245 6.76459 21.1245 4.69584C21.0948 4.27782 21.1553 3.8583 21.3018 3.46568C21.4484 3.07306 21.6776 2.71652 21.9739 2.42019C22.2702 2.12386 22.6268 1.89467 23.0194 1.74813C23.412 1.60159 23.8315 1.54113 24.2495 1.57084C24.6676 1.54113 25.0871 1.60159 25.4797 1.74813C25.8723 1.89467 26.2289 2.12386 26.5252 2.42019C26.8215 2.71652 27.0507 3.07306 27.1973 3.46568C27.3438 3.8583 27.4043 4.27782 27.3745 4.69584C27.3745 6.76459 25.9745 8.44584 24.2495 8.44584ZM24.2495 2.82084C23.9966 2.79312 23.7406 2.82257 23.5005 2.907C23.2604 2.99143 23.0423 3.12869 22.8624 3.30865C22.6824 3.48861 22.5451 3.70668 22.4607 3.94677C22.3763 4.18686 22.3468 4.44285 22.3745 4.69584C22.3745 6.07709 23.2183 7.19584 24.2495 7.19584C25.2808 7.19584 26.1245 6.07709 26.1245 4.69584C26.1523 4.44285 26.1228 4.18686 26.0384 3.94677C25.954 3.70668 25.8167 3.48861 25.6367 3.30865C25.4568 3.12869 25.2387 2.99143 24.9986 2.907C24.7585 2.82257 24.5025 2.79312 24.2495 2.82084Z"
+              fill="#001665" />
+            <path
+              d="M30.5004 14.6958H29.2504V10.6833C29.2532 10.2198 29.0842 9.77163 28.776 9.42537C28.4679 9.07912 28.0424 8.85928 27.5816 8.8083L24.1816 8.4458L24.3191 7.1958L27.7191 7.5708C28.487 7.65577 29.1962 8.02216 29.7098 8.59926C30.2234 9.17636 30.5051 9.92326 30.5004 10.6958V14.6958Z"
+              fill="#001665" />
+            <path d="M28 10.9458H26.75V15.9458H28V10.9458Z" fill="#001665" />
+            <path
+              d="M17.375 30.9458H13.625C13.4724 30.9471 13.3246 30.8925 13.2095 30.7923C13.0944 30.6922 13.0199 30.5534 13 30.4021L12.525 26.7895C11.616 26.5409 10.7423 26.1776 9.92502 25.7083L7.03752 27.9333C6.91676 28.026 6.76629 28.0715 6.61439 28.0611C6.46249 28.0508 6.31959 27.9853 6.21252 27.8771L3.56877 25.227C3.46052 25.12 3.39506 24.9771 3.38471 24.8252C3.37435 24.6733 3.4198 24.5228 3.51252 24.4021L5.73752 21.5146C5.27087 20.696 4.90767 19.8226 4.65627 18.9146L1.04377 18.4458C0.892463 18.426 0.753637 18.3515 0.653473 18.2363C0.553309 18.1212 0.498728 17.9734 0.500023 17.8208V15.9458H1.75002V17.2708L5.23752 17.7271C5.36475 17.7431 5.48396 17.7979 5.579 17.8839C5.67403 17.97 5.74029 18.0833 5.76877 18.2083C6.01647 19.2765 6.43882 20.2964 7.01877 21.2271C7.09135 21.3317 7.13024 21.456 7.13024 21.5833C7.13024 21.7106 7.09135 21.8349 7.01877 21.9396L4.83752 24.7333L6.71252 26.6083L9.50627 24.4583C9.6109 24.3857 9.73519 24.3468 9.86252 24.3468C9.98985 24.3468 10.1142 24.3857 10.2188 24.4583C11.1494 25.0383 12.1693 25.4606 13.2375 25.7083C13.3625 25.7368 13.4758 25.803 13.5619 25.8981C13.648 25.9931 13.7027 26.1123 13.7188 26.2396L14.175 29.6958H16.825L17.2813 26.2083C17.2973 26.0811 17.3521 25.9619 17.4382 25.8668C17.5243 25.7718 17.6375 25.7055 17.7625 25.6771C18.8307 25.4294 19.8507 25.007 20.7813 24.4271C20.8859 24.3545 21.0102 24.3156 21.1375 24.3156C21.2649 24.3156 21.3891 24.3545 21.4938 24.4271L24.2875 26.577L26.1625 24.702L24.0125 21.9083C23.9399 21.8037 23.9011 21.6794 23.9011 21.5521C23.9011 21.4247 23.9399 21.3004 24.0125 21.1958C24.5925 20.2652 25.0148 19.2452 25.2625 18.1771C25.291 18.052 25.3573 17.9388 25.4523 17.8527C25.5473 17.7666 25.6665 17.7118 25.7938 17.6958L29.25 17.2708V15.9458H30.5V17.8208C30.5013 17.9734 30.4467 18.1212 30.3466 18.2363C30.2464 18.3515 30.1076 18.426 29.9563 18.4458L26.3438 18.9208C26.0951 19.8298 25.7318 20.7035 25.2625 21.5208L27.4875 24.4083C27.5802 24.5291 27.6257 24.6795 27.6153 24.8314C27.605 24.9833 27.5395 25.1262 27.4313 25.2333L24.7813 27.8833C24.6742 27.9916 24.5313 28.057 24.3794 28.0674C24.2275 28.0777 24.077 28.0323 23.9563 27.9396L21.0688 25.7146C20.2515 26.1838 19.3778 26.5472 18.4688 26.7958L18 30.4021C17.9802 30.5534 17.9057 30.6922 17.7906 30.7923C17.6754 30.8925 17.5276 30.9471 17.375 30.9458Z"
+              fill="#001665" />
+          </svg>
+          <div id="board-members">
+            <p class="heading">経営メンバー</p>
+          </div>
+        </div>
+        <div class="main-img">
+          <div class="img-div">
+            <div class="mainImg--wrapper">
+              <img class="img" src="img/Kunugi1.png" />
+            </div>
+          </div>
+          <div class="board-text">
+            <div class="title-div">
+              <p class="title">代表取締役社長</p>
+            </div>
+
+            <p class="content-title">
+              <strong>功刀奨也</strong> Shoya Kunugi
+            </p>
+            <p class="content">
+              大手人材会社に入社後、複数のベンチャーに関わり起業。<br />
+              M＆A領域における事業を立ち上げ会社を譲渡。<br />
+              その後、譲渡先企業にて執行役員を務め2019年に株式会社readytoworkを創業。<br />
+              外国人向けの就業支援事業、新規事業立ち上げ、開発事業を展開。<br />
+              2021年8月に東証プライム上場の株式会社スカラにグループインし、子会社代表に就任。<br />
+              自身の起業経験を基に多くのベンチャー企業へ事業戦略/財務戦略のアドバイザリーを務める
+            </p>
+          </div>
+        </div>
+        <div class="img-container">
+          <div class="main-img1">
+            <div class="img-div">
+              <img class="img1 shadow" src="img/Nagino11.png" />
+            </div>
+            <div class="title-div1">
+              <p class="title">取締役</p>
+            </div>
+            <p class="content-title">
+              <strong>梛野 憲克</strong>Norikatsu Nagino
+            </p>
+            <p class="content">
+              東京工業大学大学院 博士課程修了 博士（工学）
+              ㈱スカラに合流後、各事業子会社のM&A後のPMIや、サービス構築及び業績向上に貢献。2013年に株式会社スカラ代表取締役社長就任後、新興ベンチャー企業であった同社を、東証プライムまで会社を育てあげた
+            </p>
+          </div>
+          <div class="main-img1">
+            <div class="img-div">
+              <img class="img1 shadow" src="img/Nitta.png" />
+            </div>
+            <div class="title-div1">
+              <p class="title">取締役</p>
+            </div>
+            <p class="content-title">
+              <strong>新田 英明 </strong> Hideaki Nitta
+            </p>
+            <p class="content">
+              日本大学経済学部経済学科卒。
+              2007年に現㈱スカラコミュニケーションズへ入社。現在はベンチャー企業を含む、大小様々なパートナー企業と共に、大手企業の経営層に対して、様々な課題や社会問題を解決するためのITサービスの企画、事業化の提案に注力している。
+            </p>
+          </div>
+          <div class="main-img1">
+            <div class="img-div1">
+              <img class="img1 shadow" src="img/Suzuki1.png" />
+            </div>
+            <div class="title-div1">
+              <p class="title">取締役</p>
+            </div>
+            <p class="content-title">
+              <strong>鈴木 卓人</strong> Takuto Suzuki
+            </p>
+            <p class="content">
+              慶應義塾大学理工学部 数学科 統計学専攻卒
+              2006年4月SBIホールディングス入社。
+              M&A（事業投資）や新規事業立ち上げを推進。現在はスカラプレイスの代表取締役社長に就任。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Board Member section End-->
+  <section class="developmentBoardImageSection">
+    <div class="developmentBoardImage-wrapper">
+      <div class="row topCardWrapper">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"></div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-0">
+          <div class="topCard">
+            <div class="topCard--content">
+              <div class="topCard--content__icon">
+                <object data="./img/board-icon1.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="topCard--content__contents">
+                <div class="topCard--content__contents--title">会社名</div>
+                <div class="topCard--content__contents--description">
+                  株式会社readytowork<br />
+                  （スカラグループ：東証プライム上場）
+                </div>
+              </div>
+            </div>
+            <div class="topCard--content">
+              <div class="topCard--content__icon">
+                <object data="./img/board-icon2.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="topCard--content__contents">
+                <div class="topCard--content__contents--title">事業内容</div>
+                <div class="topCard--content__contents--description">
+                  新規事業開発<br />
+                  WEBサービス、アプリの企画、開発
+                </div>
+              </div>
+            </div>
+            <div class="topCard--content">
+              <div class="topCard--content__icon">
+                <object data="./img/board-icon3.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="topCard--content__contents">
+                <div class="topCard--content__contents--title">
+                  人材紹介免許
+                </div>
+                <div class="topCard--content__contents--description">
+                  有料職業紹介事業 厚生労働大臣許可番号:13-ユ-311337
+                </div>
+              </div>
+            </div>
+            <div class="topCard--content">
+              <div class="topCard--content__icon">
+                <object data="./img/board-icon4.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="topCard--content__contents">
+                <div class="topCard--content__contents--title">資本金</div>
+                <div class="topCard--content__contents--description">
+                  20,000,000円 (資本準備金含む)
+                </div>
+              </div>
+            </div>
+            <div class="topCard--content">
+              <div class="topCard--content__icon">
+                <object data="./img/board-icon5.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="topCard--content__contents">
+                <div class="topCard--content__contents--title">
+                  代表取締役
+                </div>
+                <div class="topCard--content__contents--description">
+                  功刀 奨也
+                </div>
+              </div>
+            </div>
+            <div class="topCard--content">
+              <div class="topCard--content__icon">
+                <object data="./img/board-icon6.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="topCard--content__contents">
+                <div class="topCard--content__contents--title">取締役</div>
+                <div class="topCard--content__contents--description">
+                  梛野 憲克、鈴木 卓人、新田 英明
+                </div>
+              </div>
+            </div>
+            <div class="topCard--content">
+              <div class="topCard--content__icon">
+                <object data="./img/board-icon7.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="topCard--content__contents">
+                <div class="topCard--content__contents--title">監査役</div>
+                <div class="topCard--content__contents--description">
+                  相田 武夫
+                </div>
+              </div>
+            </div>
+            <div class="topCard--content">
+              <div class="topCard--content__icon">
+                <object data="./img/board-icon4.svg" type="image/svg+xml"></object>
+              </div>
+              <div class="topCard--content__contents">
+                <div class="topCard--content__contents--title">所在地</div>
+                <div class="topCard--content__contents--description">
+                  〒150-0002<br />
+                  東京都渋谷区渋谷２丁目２１−１ ヒカリエ 32F
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row bottomCardWrapper">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="bottomCardLeft">
+            <img src="./img/dev.png" alt="" class="dboardSliced" />
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 bottomCardRight-container">
+          <div class="bottomCardRight">
+            <span class="bottomCardRight--heading">スポンサー活動</span>
+            <div class="bottomCardRight--subheading">
+              株式会社readytoworkはプロバスケットボールチーム<br />
+              「THE SAITAMA BRONCOS（さいたまブロンコス）」のOFFICIAL
+              PARTNERSです。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Board Member section End-->
+  <section id="inquiry">
+    <div class="container">
+      <div class="wrapper shadow-lg">
+        <div class="details">
+          <div class="containers">
+            <div class="image">
+              <object data="./img/telephone.svg" class="telephone"></object>
+            </div>
+            <div class="contact-details">
+              <h1>Contact Us</h1>
+              <h2>”共に創る、共に成長する”</h2>
+              <p class="p">
+                システム開発を希望される事業会社様、<br />
+                協業/アライアンスを希望される企業様<br />
+                のご連絡お待ちしています。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="forms">
+          <div class="title">
+            <h1>お問い合わせ</h1>
+          </div>
+          <div class="container">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="会社名" />
+                <div id="name_error" class="error"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="担当者名" />
+                <div id="email_error" class="error"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="company" placeholder="メールアドレス" />
+                <div id="company_error" class="error"></div>
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" id="tel" placeholder="電話番号" />
+                <div id="tel_error" class="error"></div>
+              </div>
+              <div class="form-group">
+                <select class="form-control form-control-sm" id="inquiry-type">
+                  <option selected>選択してください</option>
+                  <option>お見積もりがほしい</option>
+                  <option>サービス概要を知りたい</option>
+                  <option>資料請求</option>
+                  <option>協業についての相談</option>
+                  <option>その他のお問い合わせ</option>
+                  <div id="inquiry_type_error" class="error"></div>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="message" rows="3" maxlength="500" placeholder="内容"></textarea>
+                <div class="area">
+                  <div id="message_error" class="error"></div>
+                  <div id="the-count">
+                    <span id="current">0</span>
+                    <span id="maximum">/ 500</span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group inquiry-submit">
+                <button class="btn btn-primary" type="submit" id="submit_button">
+                  送信
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section start -->
+  <section class="footer-section">
+    <div class="content">
+      <div class="logo-section">
+        <div class="footer-logo">
+          <svg width="169" viewBox="0 0 169 27" fill="none" class="footer-logo2" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2685_9386)">
+              <path
+                d="M5.97797 2.35486C8.35927 2.35486 9.57581 2.97607 10.3782 3.64905C11.6977 4.76205 12.086 6.23689 12.086 7.53107C12.086 9.21351 11.4135 10.6889 10.0676 11.5943C9.62757 11.9049 9.00637 12.1896 8.17809 12.3449L13.5613 19.6177H9.36821L4.76091 12.6814H4.3473V19.6177H0.982422V2.35486H5.97797ZM4.34783 10.3006H5.305C5.95209 10.3006 8.61758 10.223 8.61758 7.6869C8.61758 5.12442 5.97745 5.09853 5.35624 5.09853H4.3473V10.3006H4.34783Z"
+                fill="#001665" />
+              <path
+                d="M26.3742 16.4863C26.0377 17.3145 24.7694 19.9806 20.861 19.9806C19.0491 19.9806 17.6778 19.4629 16.5648 18.4017C15.3219 17.2369 14.8047 15.7874 14.8047 14.0278C14.8047 11.8018 15.7106 10.43 16.5125 9.62765C17.8326 8.33346 19.3851 8.04874 20.731 8.04874C23.0088 8.04874 24.3289 8.95467 25.1048 9.88648C26.2955 11.3101 26.4508 13.0696 26.4508 14.2862V14.545H18.0655C18.0655 15.218 18.2467 15.9427 18.6086 16.4345C18.945 16.9004 19.6439 17.4957 20.8604 17.4957C22.0511 17.4957 22.957 16.9263 23.4747 16.0204L26.3742 16.4863ZM23.4752 12.5261C23.2164 10.9989 21.974 10.2742 20.8092 10.2742C19.6444 10.2742 18.4279 11.0248 18.1691 12.5261H23.4752Z"
+                fill="#001665" />
+              <path
+                d="M37.7365 8.41111H40.8944V19.6177H37.7365V18.1682C36.5977 19.7983 35.0964 19.98 34.294 19.98C30.8515 19.98 28.5742 17.2881 28.5742 14.0014C28.5742 10.6888 30.8261 8.04874 34.1387 8.04874C34.9929 8.04874 36.6753 8.20404 37.7365 9.8606V8.41111ZM31.8356 14.0014C31.8356 15.7874 33.1292 17.1851 34.9411 17.1851C36.753 17.1851 38.0471 15.7874 38.0471 14.0014C38.0471 12.216 36.753 10.8436 34.9411 10.8436C33.1292 10.8436 31.8356 12.216 31.8356 14.0014Z"
+                fill="#001665" />
+              <path
+                d="M52.4904 0.750061H55.6482V19.6177H52.4904V18.1682C51.3515 19.7983 49.8503 19.98 49.0479 19.98C45.6053 19.98 43.3281 17.2881 43.3281 14.0014C43.3281 10.6888 45.58 8.04874 48.8926 8.04874C49.7467 8.04874 51.4292 8.20404 52.4904 9.8606V0.750061ZM46.5894 14.0014C46.5894 15.7874 47.8831 17.1851 49.695 17.1851C51.5068 17.1851 52.801 15.7874 52.801 14.0014C52.801 12.216 51.5068 10.8436 49.695 10.8436C47.8831 10.8436 46.5894 12.216 46.5894 14.0014Z"
+                fill="#001665" />
+              <path
+                d="M62.5332 17.9357L57.2012 8.41108H60.8767L64.3446 14.7779L67.4501 8.41108H71.022L61.9891 25.545H58.4172L62.5332 17.9357Z"
+                fill="#001665" />
+              <path
+                d="M94.8863 10.8437C93.0744 10.8437 91.7285 12.2673 91.7285 14.0274C91.7285 15.7352 93.0485 17.1852 94.8863 17.1852C96.724 17.1852 98.0441 15.7357 98.0441 14.0274C98.0436 12.2673 96.6982 10.8437 94.8863 10.8437Z"
+                fill="#001665" />
+              <path
+                d="M84.0977 23.2303L90.0874 25.9306C90.0874 25.9306 92.4566 24.8625 95.9789 23.2741C94.0582 22.6899 92.034 22.3798 89.9601 22.3798C87.9428 22.3804 85.9724 22.6756 84.0977 23.2303Z"
+                fill="#001665" />
+              <path
+                d="M89.9597 4.66431C88.3248 4.66431 86.7338 4.85236 85.2061 5.20576V8.41111H87.3803V11.103H85.2061V19.6182H82.0483V11.103H80.8059V8.41111H82.0483V6.20888C76.9973 8.26426 72.9251 12.2255 70.7266 17.2026L82.5105 22.5156C84.6536 21.7993 87.6233 21.317 89.9597 21.317C92.3521 21.317 95.342 21.8294 97.5278 22.5769C101.045 20.9911 104.851 19.2754 109.236 17.2982C105.996 9.86324 98.5864 4.66431 89.9597 4.66431ZM99.4152 18.4011C98.458 19.2812 97.008 19.98 94.8861 19.98C92.7642 19.98 91.3141 19.2812 90.357 18.4011C89.2445 17.3917 88.4675 15.8386 88.4675 14.0273C88.4675 12.1896 89.2445 10.6371 90.357 9.62711C91.3141 8.74707 92.7642 8.04821 94.8861 8.04821C97.008 8.04821 98.458 8.74707 99.4152 9.62711C100.528 10.6365 101.305 12.1896 101.305 14.0273C101.305 15.8392 100.528 17.3917 99.4152 18.4011Z"
+                fill="#001665" />
+              <path
+                d="M116.486 19.6176H113.95L107.945 2.35482H111.517L115.374 14.1049L119.593 2.19952H121.456L125.442 14.1049L129.583 2.35482H133.155L126.761 19.6176H124.225L120.446 8.66992L116.486 19.6176Z"
+                fill="#001665" />
+              <path
+                d="M143.489 9.62765C144.601 10.6371 145.378 12.1901 145.378 14.0278C145.378 15.8397 144.601 17.3922 143.489 18.4017C142.531 19.2817 141.081 19.9806 138.959 19.9806C136.838 19.9806 135.388 19.2817 134.43 18.4017C133.317 17.3922 132.541 15.8392 132.541 14.0278C132.541 12.1901 133.317 10.6376 134.43 9.62765C135.388 8.7476 136.838 8.04874 138.959 8.04874C141.081 8.04874 142.531 8.7476 143.489 9.62765ZM142.117 14.0273C142.117 12.2672 140.771 10.8436 138.959 10.8436C137.147 10.8436 135.801 12.2672 135.801 14.0273C135.801 15.7351 137.121 17.1851 138.959 17.1851C140.797 17.1851 142.117 15.7356 142.117 14.0273Z"
+                fill="#001665" />
+              <path
+                d="M147.811 8.41111H150.968V10.0935C151.46 9.13586 152.133 8.66995 152.366 8.54053C152.858 8.22993 153.479 8.04874 154.23 8.04874C154.773 8.04874 155.213 8.17816 155.576 8.30758L155.162 11.2578C154.747 10.973 154.333 10.8436 153.686 10.8436C153.091 10.8436 152.211 10.973 151.59 11.7496C150.994 12.4996 150.968 13.4573 150.968 14.2339V19.6171H147.811V8.41111Z"
+                fill="#001665" />
+              <path
+                d="M160.286 0.750061V12.5002L164.479 8.41111H168.568L163.314 13.3285L168.982 19.6177H164.789L160.622 14.8297L160.285 15.1403V19.6177H157.127V0.750061H160.286Z"
+                fill="#001665" />
+            </g>
+            <defs>
+              <clipPath id="clip0_2685_9386">
+                <rect width="168" height="26" fill="white" transform="translate(0.982422 0.469727)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg width="230" class="footer-logo3" viewBox="0 0 230 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2685_9399)">
+              <path
+                d="M112.253 24.0997C111.796 23.1772 111.132 22.3729 110.313 21.7497C109.379 21.0582 108.348 20.5089 107.253 20.1197C105.918 19.6448 104.56 19.2409 103.183 18.9097C101.963 18.6097 100.893 18.3197 99.9728 18.0597C99.1756 17.8453 98.4068 17.5365 97.6828 17.1397C97.1385 16.856 96.6742 16.4399 96.3328 15.9297C96.0186 15.3945 95.8658 14.7798 95.8928 14.1597C95.8674 13.5839 95.9815 13.0105 96.2252 12.4882C96.4689 11.9659 96.8352 11.5101 97.2928 11.1597C98.5882 10.3395 100.114 9.9606 101.643 10.0797C102.521 10.0801 103.396 10.1773 104.253 10.3697C105.049 10.555 105.828 10.8058 106.583 11.1197C107.228 11.397 107.847 11.7317 108.433 12.1197C108.79 12.3584 109.125 12.6296 109.433 12.9297L111.053 8.83973C109.876 8.04586 108.611 7.39146 107.283 6.88973C105.512 6.22255 103.635 5.88367 101.743 5.88973C100.312 5.87857 98.8876 6.07392 97.5128 6.46973C96.2819 6.81774 95.1305 7.40193 94.1228 8.18973C93.1629 8.95436 92.3871 9.92494 91.8528 11.0297C91.2608 12.2363 90.9627 13.5659 90.9828 14.9097C90.9497 15.9395 91.1443 16.9639 91.5528 17.9097C91.9312 18.7404 92.4917 19.4753 93.1928 20.0597C94.0304 20.7251 94.9734 21.2456 95.9828 21.5997C97.245 22.0828 98.5338 22.4935 99.8428 22.8297C101.113 23.1697 102.253 23.4797 103.253 23.8297C104.132 24.0846 104.985 24.4193 105.803 24.8297C106.424 25.1466 106.97 25.5933 107.403 26.1397C107.795 26.6859 107.992 27.348 107.963 28.0197C107.99 28.5826 107.865 29.1424 107.601 29.6404C107.337 30.1383 106.944 30.556 106.463 30.8497C105.169 31.5772 103.695 31.9239 102.213 31.8497C101.104 31.8531 99.9997 31.7221 98.9228 31.4597C97.9207 31.1993 96.9383 30.8685 95.9828 30.4697C95.1586 30.1293 94.3656 29.7177 93.6128 29.2397C93.0651 28.8979 92.5526 28.5026 92.0828 28.0597L90.3828 32.3597C91.9769 33.511 93.7417 34.4052 95.6128 35.0097C97.7199 35.6844 99.9204 36.0219 102.133 36.0097C103.55 36.0191 104.964 35.8579 106.343 35.5297C107.571 35.242 108.736 34.7338 109.783 34.0297C110.765 33.3508 111.565 32.4408 112.113 31.3797C112.722 30.1685 113.021 28.825 112.983 27.4697C113 26.3054 112.75 25.1526 112.253 24.0997Z"
+                fill="black" />
+              <path d="M181.502 32.4697V7.46973H176.502V36.4697H197.622L199.202 32.4697H181.502Z" fill="black" />
+              <path
+                d="M213.492 7.46973H217.632L229.462 37.4697H224.302L221.192 29.4697H209.842L206.772 37.4697H201.572L213.492 7.46973ZM220.312 25.4697L215.562 12.7597L210.642 25.4697H220.312Z"
+                fill="black" />
+              <path
+                d="M139.462 26.7197C138.219 28.6296 136.392 30.0867 134.254 30.8739C132.115 31.6611 129.78 31.7362 127.595 31.0881C125.411 30.4399 123.494 29.1031 122.131 27.2771C120.768 25.451 120.032 23.2334 120.032 20.9547C120.032 18.6761 120.768 16.4585 122.131 14.6324C123.494 12.8063 125.411 11.4696 127.595 10.8214C129.78 10.1732 132.115 10.2483 134.254 11.0355C136.392 11.8227 138.219 13.2799 139.462 15.1897L143.822 14.1897C142.314 11.2259 139.852 8.8561 136.833 7.4624C133.814 6.06871 130.414 5.73232 127.18 6.50747C123.946 7.28262 121.068 9.12414 119.009 11.7351C116.95 14.3461 115.83 17.5745 115.83 20.8997C115.83 24.225 116.95 27.4533 119.009 30.0643C121.068 32.6753 123.946 34.5168 127.18 35.292C130.414 36.0671 133.814 35.7307 136.833 34.3371C139.852 32.9434 142.314 30.5736 143.822 27.6097L139.462 26.7197Z"
+                fill="black" />
+              <path
+                d="M156.872 7.46973H160.982L172.812 37.4697H167.682L164.572 29.4697H153.222L150.152 37.4697H144.982L156.872 7.46973ZM163.692 25.4697L158.982 12.7597L153.982 25.4697H163.692Z"
+                fill="black" />
+              <path d="M77.9824 5.46973H26.9824V10.4697H77.9824V5.46973Z" fill="#878787" />
+              <path d="M39.9824 15.4697H26.9824V20.4697H39.9824V15.4697Z" fill="#878787" />
+              <path d="M77.9824 25.4697H51.9824V30.4697H77.9824V25.4697Z" fill="#878787" />
+              <path d="M77.9824 35.4697H26.9824V40.4697H77.9824V35.4697Z" fill="#878787" />
+              <path d="M39.9824 25.4697H26.9824V30.4697H39.9824V25.4697Z" fill="#878787" />
+              <path d="M51.9824 0.469727H0.982422V5.46973H51.9824V0.469727Z" fill="black" />
+              <path d="M26.9824 10.4697H0.982422V15.4697H26.9824V10.4697Z" fill="black" />
+              <path d="M51.9824 20.4697H26.9824V25.4697H51.9824V20.4697Z" fill="black" />
+              <path d="M51.9824 30.4697H0.982422V35.4697H51.9824V30.4697Z" fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0_2685_9399">
+                <rect width="228.48" height="40" fill="white" transform="translate(0.982422 0.469727)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <svg width="113" class="footer-logo1" height="132" viewBox="0 0 113 132" fill="none"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect x="0.462891" y="0.969727" width="112" height="131" fill="url(#pattern0)" />
+          <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_2685_9418" transform="scale(0.00892857 0.00763359)" />
+            </pattern>
+            <image id="image0_2685_9418" width="112" height="131"
+              xlink:href="data:image/png;base64,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" />
+          </defs>
+        </svg>
+      </div>
+      <p class="p-content">
+        株式会社readytoworkは、スカラグループの一員です。
+        株式会社スカラは東京証券取引所プライム市場（証券コード4845）に上場しています。
+      </p>
+    </div>
+
+    <div class="footer">Copyright © 2023 readytowork</div>
+  </section>
+  <!-- Footer section end -->
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
