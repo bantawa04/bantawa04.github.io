@@ -1,0 +1,41 @@
+@mixin button($font-size: 16px, $line-height: 27px, $border-radius: 3px, $bg-color: $primary, $font-color: #333, $height: auto, $padding: 0) {
+    display: inline-block;
+    border-radius: $border-radius;
+    background: $bg-color;
+    font-size: $font-size;
+    color: $font-color;
+    line-height: $line-height;
+    height: $height;
+    padding: $padding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rtwBtn--primary {
+    @include button($font-size: 20px, $line-height: 27px, $border-radius: 8px, $bg-color: $primary, $font-color: $white, $padding: 17.6px 55px);
+    border: none;
+}
+
+.rtwBtn--primary__rounded {
+    @include button($height: 45px, $font-size: 16px, $line-height: 27px, $border-radius: 40px, $bg-color: $primary, $font-color: $white, $padding: 12px 66px);
+    border: none;
+}
+
+.rtwBtn--primary__rounded--inactive {
+    @include button($height: 45px, $font-size: 16px, $line-height: 27px, $border-radius: 40px, $bg-color: $secondary1, $font-color: $textColor, $padding: 12px 66px);
+    border: 1px solid #6584F0;
+}
+
+.rtwBtn--secondary {
+    @include button($height: 45px, $font-size: 16px, $line-height: 27px, $border-radius: none, $bg-color: $secondary, $font-color: $white, $padding: 16px 24px);
+    // border: none;
+    &:hover {
+        background-color: red;
+    }
+}
+
+.rtwBtn--secondary__rounded {
+    @include button($height: 45px, $font-size: 16px, $line-height: 27px, $border-radius: 40px, $bg-color: $secondary, $font-color: $white, $padding: 16px 24px);
+    border: none;
+}

@@ -1,0 +1,109 @@
+#header {
+  justify-content: center;
+}
+.sticky {
+  top: 0;
+  position: fixed;
+  background: white;
+  display: block !important;
+  text-align: center;
+  z-index: 100;
+  width: 100vw;
+}
+.non-sticky {
+  position: relative !important;
+}
+.navbar {
+  width: 100%;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  & > .container-xl {
+    margin: 0;
+  }
+  &__item {
+    display: inline-flex;
+    padding: 26px 0 26px 0;
+    font-weight: 600;
+    & > div {
+      padding-right: 22px;
+    }
+    & > div:last-child {
+      padding-right: 0px;
+    }
+  }
+  a {
+    color: black;
+    &:hover {
+      color: #001665;
+    }
+  }
+  //   Ham burger style
+  &__ham {
+    display: none;
+    cursor: pointer;
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 35px;
+      height: 2.5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  }
+  .change {
+    .bar1 {
+      transform: translate(0, 11px) rotate(-45deg);
+    }
+    .bar2 {
+      opacity: 0;
+    }
+    .bar3 {
+      transform: translate(0, -5px) rotate(45deg);
+    }
+  }
+  //   ham burger style end
+}
+
+// Mobile screen
+@media screen and (max-width: 827px) {
+  .navbar__item {
+    display: none;
+  }
+  .navbar {
+    &__logo {
+      padding: 16px 0;
+    }
+    &__ham {
+      display: inline-block;
+    }
+  }
+}
+
+#mbl-header {
+  display: flex;
+  position: fixed;
+  display: none;
+  padding-top: 0;
+  background-color: white;
+  height: fit-content;
+  flex-direction: column;
+  text-align: center;
+  top: 59px;
+  & > .navbar__item {
+    display: block;
+    padding: 1rem 0;
+    div {
+      padding: 0.25rem 1rem;
+    }
+  }
+}
+
+.block {
+  display: block !important;
+}

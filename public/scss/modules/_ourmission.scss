@@ -1,0 +1,136 @@
+section.ourmissionSection {
+  .ourmissionSection--heading__content {
+    margin-bottom: 45px;
+
+    .sectionHeadingImg {
+      img {
+        height: 30px;
+        width: 26px;
+
+        @media (min-width: 576px) {
+          height: 75px;
+          width: 65.55px;
+        }
+      }
+    }
+
+    .headingTextWrapper {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+
+      @media (min-width: 576px) {
+        width: 265px;
+      }
+
+      .headingText--sectionHeadeing {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #000000;
+
+        @media (min-width: 576px) {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 48px;
+        }
+      }
+
+      .headingText--sectionSubheading {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        color: #000000;
+
+        @media (min-width: 576px) {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 23px;
+        }
+      }
+    }
+  }
+
+  .ourmissionSection--body__content {
+    &--imageWrapper {
+      position: relative;
+      margin-bottom: 25px;
+
+      .dotsTop {
+        position: absolute;
+        top: -12px;
+        right: 40px;
+        z-index: -1;
+      }
+
+      .dotsBottom {
+        position: absolute;
+        bottom: -40px;
+        // left: 96px;
+        left: calc(30vw);
+        z-index: -1;
+
+        @media (min-width: 576px) {
+          left: calc(34vw);
+        }
+
+        @media (min-width: 768px) {
+          left: calc(16.5vw);
+        }
+      }
+
+      .mainImage {
+        border-radius: 22px !important;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    &--contentWrapper {
+      display: flex;
+      align-items: center;
+      padding-left: 7rem;
+      margin-top: -4rem;
+      @media (max-width: 768px) {
+        padding-left: inherit;
+        margin-top: 0;
+        padding-left: 1rem;
+      }
+      &__contentHeading {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        color: #000000;
+
+        @media (min-width: 576px) {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+
+      &__contentBody {
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 21px;
+          color: #3d3d3d;
+          @media (min-width: 576px) {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.ourmissionSection {
+    margin-top: 60px;
+    margin-bottom: 160px;
+  }
+}

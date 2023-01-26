@@ -1,0 +1,98 @@
+#our-partner {
+  .companyAttribueWrapper {
+    .companyAttribue {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: $white;
+      border: 1px solid #eeeeee;
+      box-shadow: 8px 8px 24px rgba(18, 18, 18, 0.08);
+      border-radius: 20px;
+      flex: 1;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      &--icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 16px;
+        @media (min-width: 768px) {
+          width: 64px;
+          height: 64px;
+        }
+      }
+      &--contentWrapper {
+        display: flex;
+        flex-direction: column;
+        &__title {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 19px;
+          text-align: center;
+          color: #212121;
+          @media (min-width: 768px) {
+            font-size: 20px;
+            line-height: 27px;
+          }
+        }
+        &__figure {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .qty {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            text-align: center;
+            color: #212121;
+            @media (min-width: 768px) {
+              font-size: 32px;
+              line-height: 44px;
+            }
+          }
+          .description {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            color: #3d3d3d;
+            margin-left: 0.25em;
+            @media (min-width: 768px) {
+              font-size: 18px;
+              line-height: 25px;
+            }
+          }
+        }
+      }
+    }
+    .companyAttribue:hover {
+      background-color: #001665;
+      transition: background-color 0s linear;
+      .companyAttribue--contentWrapper .companyAttribue--contentWrapper__title,
+      .companyAttribue--contentWrapper
+        .companyAttribue--contentWrapper__figure
+        .qty,
+      .description,
+      .svg {
+        color: white;
+        transition: color 0.1s linear;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .companyAttribue {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}

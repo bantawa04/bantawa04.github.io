@@ -1,0 +1,212 @@
+section.developmentBoardImageSection {
+  .developmentBoardImage-wrapper {
+    max-width: 100vw;
+    overflow: clip;
+    .topCardWrapper {
+      @media (min-width: 576px) {
+        background: linear-gradient(267.49deg,
+            #001665 -10.24%,
+            rgba(0, 182, 135, 0.22) 101.49%),
+          url("/public/img/development1.png");
+        background-repeat: no-repeat;
+        background-size: contain, cover;
+      }
+
+      .topCard {
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        margin-right: 4rem;
+        width: fit-content;
+        background-color: $primary;
+        box-shadow: 0px 250px 100px rgba(0, 0, 0, 0.01),
+          0px 140px 84px rgba(0, 0, 0, 0.05), 0px 62px 62px rgba(0, 0, 0, 0.09),
+          0px 16px 34px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 60px 0px 0px;
+        padding: 37px 37px 37px 20px;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          margin-top: 0rem;
+          padding-left: 3rem;
+        }
+
+        &--content {
+          display: flex;
+          flex-direction: row;
+
+          &:not(:last-child) {
+            margin-bottom: 16px;
+          }
+
+          &__icon {
+            margin-right: 30px;
+            height: 36px;
+            width: 36px;
+
+            object {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          &__contents {
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 768px) {
+              flex-direction: row;
+            }
+
+            &--title {
+              color: $white;
+              font-family: "Open Sans";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 123.2%;
+              margin-bottom: 10px;
+
+              @media (min-width: 768px) {
+                font-size: 16px;
+                min-width: 169px;
+                margin-right: 27px;
+                display: flex;
+                align-items: center;
+              }
+            }
+
+            &--description {
+              color: $white;
+              font-family: "Open Sans";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 16px;
+
+              @media (min-width: 768px) {
+                font-size: 16px;
+                line-height: 22px;
+                display: flex;
+                align-items: center;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bottomCardWrapper {
+      background: linear-gradient(180deg,
+          rgba(46, 50, 63, 0.29) 0%,
+          rgba(1, 25, 109, 0.65) 99.99%,
+          rgba(190, 204, 254, 0.22) 100%),
+        url("/public/img/corporate-businessmen-shaking-hands-sm.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @media (min-width: 768px) {
+        background: linear-gradient(180deg,
+            rgba(46, 50, 63, 0.29) 0%,
+            rgba(1, 25, 109, 0.65) 99.99%,
+            rgba(190, 204, 254, 0.22) 100%),
+          url("/public/img/corporate-businessmen-shaking-hands.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .bottomCardLeft {
+        max-width: 692px;
+        margin-left: auto;
+        margin-top: 37px;
+
+        @media (min-width: 768px) {
+          margin-top: -1px;
+        }
+
+        img.dboardSliced {
+          padding: 0px 20px 30px 20px;
+          position: relative;
+          z-index: 2;
+
+          @media (min-width: 768px) {
+            padding: 0px 0px 30px 2rem;
+          }
+        }
+      }
+
+      .bottomCardRight-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .bottomCardRight {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @media (min-width: 768px) {
+          padding-right: 34px;
+          width: 575px;
+        }
+
+        &--heading {
+          background-color: $secondary;
+          color: $white;
+          padding: 10px 40px;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 140.62%;
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: url("/public/img/corp-dots.svg");
+            left: 119px;
+            top: -68px;
+
+            @media (min-width: 768px) {
+              left: 303px;
+              top: -80px;
+            }
+          }
+
+          &::after {
+            position: absolute;
+            content: url("/public/img/corp-dot1.svg");
+            left: 211px;
+            top: -19px;
+
+            @media (min-width: 768px) {
+              left: 395px;
+              top: -31px;
+            }
+          }
+
+          @media (min-width: 768px) {
+            font-size: 32px;
+            line-height: 45px;
+          }
+        }
+
+        &--subheading {
+          margin-top: 30px;
+          margin-bottom: 44px;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 180.6%;
+          color: $white;
+
+          @media (min-width: 768px) {
+            font-size: 24px;
+            line-height: 180.6%;
+          }
+        }
+      }
+    }
+  }
+}

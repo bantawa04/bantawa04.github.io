@@ -1,0 +1,211 @@
+.threeCircles-bg {
+  background: url("/public/img/bg-sm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    background: url("/public/img/Frame.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+section.missionImageSection {
+  .threeCircles--wrapper {
+    flex-direction: column;
+    max-width: 1010px;
+    margin: auto;
+    @media (min-width: 768px) {
+      flex-direction: column;
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .circle--wrapper {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px;
+      position: relative;
+      flex-shrink: 1;
+      &::before {
+        height: 35px;
+        width: 1px;
+        content: "";
+        left: 48%;
+        top: -11%;
+        border-left: 5px dashed rgba(255, 255, 255, 0.2);
+        position: absolute;
+      }
+      &:first-child {
+        padding-top: 40px;
+        &::before {
+          top: 0%;
+        }
+        @media (min-width: 768px) {
+          &::before {
+            top: -9%;
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        &::before {
+          height: 200px;
+          width: 1px;
+          top: -9%;
+        }
+        padding: 140px 0;
+        &:nth-child(1) {
+          padding: 140px 0;
+          padding-right: 17.25px;
+          .circle {
+            &--heading {
+              padding: 0 40px;
+            }
+
+            .svg {
+              margin-left: 40px;
+              padding: 0 !important;
+            }
+
+            &--content {
+              padding: 0px 50px;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          padding-left: 17.25px;
+          padding-right: 17.25px;
+
+          .circle {
+            &--heading {
+              padding: 0 55px;
+            }
+
+            .svg {
+              margin-left: 40px;
+              padding: 0 !important;
+            }
+
+            &--content {
+              padding: 0px 82px;
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          padding-left: 17.25px;
+          padding-right: 0;
+
+          .circle {
+            &--heading {
+              padding: 0 55px;
+            }
+
+            .svg {
+              margin-left: 40px;
+              padding: 0 !important;
+            }
+
+            &--content {
+              padding: 0px 50px;
+            }
+          }
+        }
+      }
+
+      .circle {
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 6px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        @media (min-width: 768px) {
+          height: 403px;
+          width: 403px;
+        }
+
+        .svg {
+          margin-bottom: 24px;
+          margin-top: 8px;
+          padding-right: 20px;
+          padding-left: 8px;
+        }
+
+        &--heading {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+
+          @media (min-width: 768px) {
+            font-size: 32px;
+            line-height: 44px;
+          }
+        }
+
+        &--content {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 23px;
+          padding: 0 16px;
+          text-align: center;
+          color: #ffffff;
+
+          @media (min-width: 768px) {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1300px) and (min-width: 768px) {
+  .circle--wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    &::before {
+      top: -11% !important;
+    }
+    .circle {
+      height: 300px !important;
+      width: 300px !important;
+
+      svg {
+        width: 200px;
+      }
+      .circle--heading {
+        font-size: 17px !important;
+      }
+      .circle--content {
+        font-size: 14px;
+      }
+    }
+    & > .circle:last-child {
+      .circle--heading {
+        padding: 0 49px !important;
+      }
+    }
+  }
+  .threeCircles--wrapper .circle--wrapper:nth-child(2) {
+    .circle--content {
+      padding: 0 20px !important;
+    }
+  }
+}
