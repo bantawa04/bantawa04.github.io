@@ -583,7 +583,7 @@ h1,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(98.75deg, rgba(0, 22, 101, 0.4) 0%, rgba(0, 22, 101, 0) 100%), linear-gradient(94.12deg, rgba(58, 32, 1, 0.47) 42.88%, rgba(217, 217, 217, 0) 76.25%), url("/public/img/cover.png");
+  background: linear-gradient(98.75deg, rgba(0, 22, 101, 0.4) 0%, rgba(0, 22, 101, 0) 100%), linear-gradient(94.12deg, rgba(58, 32, 1, 0.47) 42.88%, rgba(217, 217, 217, 0) 76.25%), url("./img/cover.png");
   height: 330px;
   z-index: -1;
   background-size: cover !important;
@@ -788,7 +788,7 @@ h1,
 
 @media (max-width: 576px) {
   .main-container {
-    background: linear-gradient(73.68deg, rgba(0, 22, 101, 0.4) 66.65%, rgba(0, 22, 101, 0) 197.24%), linear-gradient(94.12deg, rgba(58, 32, 1, 0.47) 42.88%, rgba(217, 217, 217, 0) 76.25%), url("/public/img/cover.png") !important;
+    background: linear-gradient(73.68deg, rgba(0, 22, 101, 0.4) 66.65%, rgba(0, 22, 101, 0) 197.24%), linear-gradient(94.12deg, rgba(58, 32, 1, 0.47) 42.88%, rgba(217, 217, 217, 0) 76.25%), url("./img/cover.png") !important;
   }
 }
 .footer-section .footer {
@@ -1296,7 +1296,7 @@ h1,
   margin-bottom: 50px;
 }
 .developmentFeatureSection .background-img {
-  background-image: url("/public/img/chart.png");
+  background-image: url("./img/chart.png");
 }
 @media only screen and (max-width: 700px) {
   .developmentFeatureSection {
@@ -1308,7 +1308,7 @@ h1,
     padding-bottom: 46px;
   }
   .developmentFeatureSection .background-img {
-    background-image: url("/public/img/chart-sm.png");
+    background-image: url("./img/chart-sm.png");
   }
   .developmentFeatureSection .container-xl {
     padding-left: 0px;
@@ -3249,7 +3249,7 @@ section.developmentBoardImageSection .developmentBoardImage-wrapper {
 }
 @media (min-width: 576px) {
   section.developmentBoardImageSection .developmentBoardImage-wrapper .topCardWrapper {
-    background: linear-gradient(267.49deg, #001665 -10.24%, rgba(0, 182, 135, 0.22) 101.49%), url("/public/img/development1.png");
+    background: linear-gradient(267.49deg, #001665 -10.24%, rgba(0, 182, 135, 0.22) 101.49%), url("./img/development1.png");
     background-repeat: no-repeat;
     background-size: contain, cover;
   }
@@ -3355,16 +3355,16 @@ section.developmentBoardImageSection .developmentBoardImage-wrapper .topCardWrap
   }
 }
 section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardWrapper {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 50, 63, 0.29)), color-stop(99.99%, rgba(1, 25, 109, 0.65)), to(rgba(190, 204, 254, 0.22))), url("/public/img/corporate-businessmen-shaking-hands-sm.png");
-  background: linear-gradient(180deg, rgba(46, 50, 63, 0.29) 0%, rgba(1, 25, 109, 0.65) 99.99%, rgba(190, 204, 254, 0.22) 100%), url("/public/img/corporate-businessmen-shaking-hands-sm.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 50, 63, 0.29)), color-stop(99.99%, rgba(1, 25, 109, 0.65)), to(rgba(190, 204, 254, 0.22))), url("./img/corporate-businessmen-shaking-hands-sm.png");
+  background: linear-gradient(180deg, rgba(46, 50, 63, 0.29) 0%, rgba(1, 25, 109, 0.65) 99.99%, rgba(190, 204, 254, 0.22) 100%), url("./img/corporate-businessmen-shaking-hands-sm.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardWrapper {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 50, 63, 0.29)), color-stop(99.99%, rgba(1, 25, 109, 0.65)), to(rgba(190, 204, 254, 0.22))), url("/public/img/corporate-businessmen-shaking-hands.png");
-    background: linear-gradient(180deg, rgba(46, 50, 63, 0.29) 0%, rgba(1, 25, 109, 0.65) 99.99%, rgba(190, 204, 254, 0.22) 100%), url("/public/img/corporate-businessmen-shaking-hands.png");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 50, 63, 0.29)), color-stop(99.99%, rgba(1, 25, 109, 0.65)), to(rgba(190, 204, 254, 0.22))), url("./img/corporate-businessmen-shaking-hands.png");
+    background: linear-gradient(180deg, rgba(46, 50, 63, 0.29) 0%, rgba(1, 25, 109, 0.65) 99.99%, rgba(190, 204, 254, 0.22) 100%), url("./img/corporate-businessmen-shaking-hands.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3421,7 +3421,7 @@ section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardW
 }
 section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardWrapper .bottomCardRight--heading::before {
   position: absolute;
-  content: url("/public/img/corp-dots.svg");
+  content: url("./img/corp-dots.svg");
   left: 119px;
   top: -68px;
 }
@@ -3433,7 +3433,7 @@ section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardW
 }
 section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardWrapper .bottomCardRight--heading::after {
   position: absolute;
-  content: url("/public/img/corp-dot1.svg");
+  content: url("./img/corp-dot1.svg");
   left: 211px;
   top: -19px;
 }
@@ -3573,7 +3573,7 @@ section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardW
   position: relative;
 }
 #development-result .result-card-list .result-card:nth-child(1) .result-card__img::after {
-  content: url("/public/img/results/background/golf-match.png");
+  content: url("./img/results/background/golf-match.png");
   display: block;
   top: -125px;
   left: -125px;
@@ -3661,7 +3661,7 @@ section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardW
   position: relative;
 }
 #development-result .result-card-list .result-card:nth-child(2)::after {
-  content: url("/public/img/results/background/section-2.svg");
+  content: url("./img/results/background/section-2.svg");
   display: block;
   position: absolute;
   margin-left: -15px;
@@ -3695,7 +3695,7 @@ section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardW
   position: relative;
 }
 #development-result .result-card-list .result-card:nth-child(3)::after {
-  content: url("/public/img/results/background/section-2.svg");
+  content: url("./img/results/background/section-2.svg");
   display: block;
   position: absolute;
   right: -300px;
@@ -3707,7 +3707,7 @@ section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardW
   position: relative;
 }
 #development-result .result-card-list .result-card:nth-child(5)::after {
-  content: url("/public/img/results/background/world-logo.png");
+  content: url("./img/results/background/world-logo.png");
   display: block;
   position: absolute;
   right: -250px;
@@ -3775,7 +3775,7 @@ section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardW
     left: 10% !important;
   }
   #development-result .result-card:nth-child(2)::after {
-    content: url("/public/img/results/background/section-2-desk.svg") !important;
+    content: url("./img/results/background/section-2-desk.svg") !important;
     top: 0px !important;
   }
   #development-result .result-card:nth-child(2) .result-card__img::after {
@@ -3933,14 +3933,14 @@ section.developmentBoardImageSection .developmentBoardImage-wrapper .bottomCardW
   }
 }
 .threeCircles-bg {
-  background: url("/public/img/bg-sm.png");
+  background: url("./img/bg-sm.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 768px) {
   .threeCircles-bg {
-    background: url("/public/img/Frame.png");
+    background: url("./img/Frame.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -4174,7 +4174,7 @@ section.missionImageSection .threeCircles--wrapper .circle--wrapper .circle--con
 }
 .circle-bg .main-circle::before {
   position: absolute;
-  content: url("/public/img/anim-assets/big-c.svg");
+  content: url("./img/anim-assets/big-c.svg");
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -4185,7 +4185,7 @@ section.missionImageSection .threeCircles--wrapper .circle--wrapper .circle--con
 .circle-bg .main-circle::after {
   position: absolute;
   display: none;
-  content: url("/public/img/anim-assets/border-c.svg");
+  content: url("./img/anim-assets/border-c.svg");
   width: 50%;
   height: 100%;
   -webkit-transform: scale(1.5);
